@@ -4,6 +4,8 @@
 AUTHOR = 'ALWI'
 SITENAME = 'Pelican Web'
 SITEURL = 'https://farooqalwi.github.io/pelican-web/'
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['tipue_search']
 
 PATH = 'content'
 
