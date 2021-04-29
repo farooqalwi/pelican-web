@@ -3,8 +3,8 @@
 
 AUTHOR = 'ALWI'
 SITENAME = 'Pelican Web'
-# SITEURL = 'https://farooqalwi.github.io/pelican-web/'
-THEME = 'pelican-themes/Flex'
+SITEURL = 'https://farooqalwi.github.io/pelican-web/'
+THEME = 'pelican-themes/Peli-Kiera'
 
 PATH = 'content'
 
