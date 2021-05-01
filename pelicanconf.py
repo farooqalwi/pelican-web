@@ -4,7 +4,7 @@
 AUTHOR = 'ALWI'
 SITENAME = 'Pelican Web'
 SITEURL = 'https://farooqalwi.github.io/pelican-web/'
-THEME = 'resume'
+THEME = 'elegant'
 
 PATH = 'content'
 
