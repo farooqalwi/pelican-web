@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>Assembly Language 3</title>
+        <link rel="stylesheet" href="https://farooqalwi.github.io/pelican-web/theme/css/main.css" />
+        <meta name="description" content="Objective: Write a program to display the digits in decimal from 0-7 in to 7- ource Code: mov al,80h =>make all port out 1f,al =>out 80h to port..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://farooqalwi.github.io/pelican-web/">Pelican Web</a></h1>
+                <nav><ul>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/pages/about-me.html">About Me</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/pages/contact.html">Contact</a></li>
+                    <li class="active"><a href="https://farooqalwi.github.io/pelican-web/category/assembly.html">Assembly</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/c.html">C#</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/case-study.html">Case Study</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/psychology.html">Psychology</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/python.html">Python</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://farooqalwi.github.io/pelican-web/assembly-language-3.html" rel="bookmark"
+           title="Permalink to Assembly Language 3">Assembly Language 3</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-04-23T15:07:00+05:00">
+                Published: Fri 23 April 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://farooqalwi.github.io/pelican-web/author/alwi.html">Alwi</a>
+        </address>
+<p>In <a href="https://farooqalwi.github.io/pelican-web/category/assembly.html">Assembly</a>.</p>
+
+</footer><!-- /.post-info -->      <h2>Objective: Write a program to display the digits in decimal from 0-7 in to 7-</h2>
+<h2>ource Code:</h2>
+<div class="highlight"><pre><span></span><code>mov  al,80h          =&gt;make  all  port
+out  1f,al           =&gt;out  80h  to  port
+mov  al,00h          =&gt;mov  0
+out  19h,al          =&gt;mov  0  to  port int  3
+mov  al,f9h          =&gt;mov  1
+out  19h,al          =&gt;mov  1  to  port int  3
+mov  al,a4h          =&gt;mov  2
+out  19h,al          =&gt;mov  2  to  port int  3
+mov  al,b0h          =&gt;mov  3
+out  19h,al          =&gt;mov  3  to  port int  3
+............(so  on  to  9)
+</code></pre></div>
+
+<h2>Output:</h2>
+<p><img alt="Assembly Language 3" src="images/AL-3.1.JPG" title="AL-3 output"></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
