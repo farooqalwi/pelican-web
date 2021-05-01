@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>Assembly Language 2</title>
+        <link rel="stylesheet" href="https://farooqalwi.github.io/pelican-web/theme/css/main.css" />
+        <meta name="description" content="Objective: Write a program to print a string. (i.e. ALWI) ource Code: .model // It is an assembler directive that specifies the size of the..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://farooqalwi.github.io/pelican-web/">Pelican Web</a></h1>
+                <nav><ul>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/pages/about-me.html">About Me</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/pages/contact.html">Contact</a></li>
+                    <li class="active"><a href="https://farooqalwi.github.io/pelican-web/category/assembly.html">Assembly</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/c.html">C#</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/case-study.html">Case Study</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/psychology.html">Psychology</a></li>
+                    <li><a href="https://farooqalwi.github.io/pelican-web/category/python.html">Python</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://farooqalwi.github.io/pelican-web/assembly-language-2.html" rel="bookmark"
+           title="Permalink to Assembly Language 2">Assembly Language 2</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-04-23T15:02:00+05:00">
+                Published: Fri 23 April 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://farooqalwi.github.io/pelican-web/author/alwi.html">Alwi</a>
+        </address>
+<p>In <a href="https://farooqalwi.github.io/pelican-web/category/assembly.html">Assembly</a>.</p>
+
+</footer><!-- /.post-info -->      <h2>Objective: Write a program to print a string. (i.e. ALWI)</h2>
+<h2>ource Code:</h2>
+<div class="highlight"><pre><span></span><code><span class="na">.model</span>          <span class="c1">// It is an assembler directive that specifies the size of the program</span>
+<span class="na">.stack</span> <span class="mi">100</span><span class="no">h</span>     <span class="c1">// It declares size of stack</span>
+<span class="na">.data</span>           <span class="c1">// In this segment variables are declared</span>
+<span class="na">.code</span>           <span class="c1">// It is code segment directive </span>
+
+<span class="nf">main</span> <span class="no">proc</span>       <span class="c1">// main procedures start from here</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">A</span><span class="err">&#39;</span>     <span class="c1">// &#39;A&#39; is moving to Data Register</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">L</span><span class="err">&#39;</span>     <span class="c1">// &#39;L&#39; is moving to Data Register</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">W</span><span class="err">&#39;</span>     <span class="c1">// &#39;W&#39; is moving to Data Register&gt;</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">I</span><span class="err">&#39;</span>     <span class="c1">// &#39;I&#39; is moving to Data Register</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>     <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">4</span><span class="no">ch</span>     <span class="c1">// Using 4ch service routine number to display</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">main</span> <span class="no">endp</span>       <span class="c1">// Main procedures end here</span>
+<span class="nf">end</span> <span class="no">main</span>        <span class="c1">// whole programs end here</span>
+</code></pre></div>
+
+<h2>Output:</h2>
+<p><img alt="Assembly Language 2" src="images/AL-2.1.JPG" title="AL-2 output">
+<img alt="Assembly Language 2" src="images/AL-2.2.JPG" title="AL-2 output">
+<img alt="Assembly Language 2" src="images/AL-2.3.JPG" title="AL-2 output"></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
