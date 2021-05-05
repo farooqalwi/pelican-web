@@ -5,8 +5,8 @@ AUTHOR = 'ALWI'
 SITENAME = 'Pelican Web'
 SITEURL = 'https://farooqalwi.github.io/pelican-web'
 THEME = 'elegant'
-STATIC_PATHS = ['body', 'static']
-CUSTOM_CSS = 'static/custom.css'
+# STATIC_PATHS = ['body', 'static']
+# CUSTOM_CSS = 'static/custom.css'
 
 PATH = 'content'
 
