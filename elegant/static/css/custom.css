@@ -1,4 +1,4 @@
 .navbar{
     display: grid;
-    grid-template-columns: 8px auto 8px;
+    grid-template-columns: auto auto auto auto auto auto auto;
 }
