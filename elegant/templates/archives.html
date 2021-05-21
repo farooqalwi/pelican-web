@@ -26,13 +26,13 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 
 {% block content %}
 {% from '_includes/_defaults.html' import ARCHIVES_URL with context %}
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
+<div class="">
+    <header class="page-header">
     <h1><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">All Posts</a></h1>
     </header>
 </div>
-<div class="row-fluid">
-    <div class="span10 offset2">
+<div class="">
+    <div class="">
         <div class="blog-archives">
             {% for article in dates %}
                 {% set year = article.date.strftime('%Y') %}

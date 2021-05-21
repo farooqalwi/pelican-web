@@ -31,13 +31,13 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 
 {% block content %}
 {% from '_includes/_defaults.html' import TAGS_URL with context %}
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
+<div class="">
+    <header class="page-header">
     <h1><a href="{{ SITEURL }}/{{ TAGS_URL }}">All Tags</a></h1>
     </header>
 </div>
-<div class="row-fluid">
-    <div class="span8 offset2">
+<div class="">
+    <div class="">
         <form class="form-search">
             <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
         </form>
@@ -52,8 +52,8 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
     </div>
 </div>
 
-<div class="row-fluid">
-    <div class="span8 offset2">
+<div class="">
+    <div class="">
         {% for tag, articles in tags|sort %}
         <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
         <ul class="articles-in-tag list-articles-category">
