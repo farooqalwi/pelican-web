@@ -464,31 +464,3 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
-
-
-	.body{
-		display: grid;
-		grid-template-columns: repeat(10, 10%);
-		grid-template-rows: auto;
-	}
-	
-	.body > .entry-title{
-		grid-row: 1;
-    	grid-column: 1/-1;
-	}
-
-	.body > .toc{
-		grid-row: 2;
-    	grid-column: 1/4;
-	}
-
-	.body > .entry-content{
-		grid-row: 2;
-    	grid-column: 4/8;
-	}
-
-	.body > .meta-data{
-		grid-row: 2;
-    	grid-column: 8/-1;
-    	padding: 0 0 0 60px;
-	}
