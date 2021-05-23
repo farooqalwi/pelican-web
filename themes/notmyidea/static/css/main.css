@@ -466,7 +466,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	#add-comment * {margin-bottom: .5em;}
 
 
-	body{
+	.myBody{
 		display: grid;
 		width: 100%;
 		min-height: 100vh;
@@ -478,7 +478,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		background-color: whitesmoke;
 	}
 	
-	body > header{
+	.myBody > header{
 		grid-column: 1/-1;
 		background-color: lightgray;
 		padding-left: 10%;
@@ -486,7 +486,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		margin: 0;
 	}
 	
-	footer{
+	.myBody > footer{
 		grid-column: 1/-1;
 		grid-row: 3;
 		background-color: lightgray;
@@ -536,7 +536,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		padding: 0;
 	}
 	
-	article{
+	.myBody > article{
 		grid-row: 2;
 		grid-column: 2/-2;
 		display: grid;
@@ -546,7 +546,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		padding: 0;
 	}
 	
-	article > header{
+	.myBody > article > header{
 		grid-row: 1;
 		grid-column: 1/-1;
 	}
