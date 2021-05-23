@@ -480,6 +480,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	
 	.myBody > header{
 		grid-column: 1/-1;
+		grid-row: 1;
 		background-color: lightgray;
 		padding-left: 10%;
 		box-shadow: 0 5px 5px grey;
