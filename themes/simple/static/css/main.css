@@ -52,7 +52,6 @@ body > section{
     grid-column: 4/-3;
     margin: 25px 0 25px 0;
     padding: 10px;
-    border-radius: 10px;
 }
 
 .meta-data{
