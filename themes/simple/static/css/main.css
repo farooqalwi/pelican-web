@@ -43,6 +43,7 @@ ul li a:hover{
 .toc{
     grid-row: 3;
     grid-column: 1/4;
+    padding: 25px;
 }
 
 body > section{
@@ -57,7 +58,7 @@ body > section{
 .meta-data{
     grid-row: 3;
     grid-column: 11/-1;
-    padding: 0 0 0 20px;
+    padding: 25px;
 }
 
 body > footer{
