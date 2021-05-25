@@ -1,3 +1,11 @@
 body{
-    background-color: cornflowerblue;
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
 }
