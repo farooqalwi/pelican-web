@@ -22,8 +22,8 @@ body > nav{
     grid-column: 1/-1;
     background-color: lightgray;
     box-shadow: 0 5px 5px grey;
-    padding-left: 10%;
     margin: 0;
+    padding: 0;
 }
 
 body > section{
