@@ -22,7 +22,7 @@
 {% endblock %}
 
 {% block content %}
-
+<article>
 <section class="toc">
   <h2>Table of contents</h2>
   <h3>Pyhton Projects</h3>
@@ -32,7 +32,7 @@
   <h3>JavaScript Projects</h3>
 </section>
 
-<section id="content" class="body">
+<section class="post">
   <header>
     <h2 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{
@@ -53,5 +53,5 @@
   <h3>Tags</h3>
   <h5>auth</h5>
 </section>
-
+</article>
 {% endblock %}
