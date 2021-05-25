@@ -19,11 +19,11 @@ body > header{
 
 body > nav{
     grid-row: 2;
-    grid-column: 2/-1;
+    grid-column: 1/-1;
     background-color: lightgray;
     box-shadow: 0 5px 5px grey;
     margin: 0;
-    padding: 0;
+    padding: 10%;
 }
 
 body > section{
