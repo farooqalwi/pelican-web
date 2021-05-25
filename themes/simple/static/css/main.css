@@ -2,7 +2,7 @@ body{
     display: grid;
     width: 100%;
     min-height: 100vh;
-    grid-template-columns: repeat(10, 10%);
+    grid-template-columns: repeat(12, [col-start] 1fr);
     grid-template-rows: auto;
     position: relative;
     margin: 0;
@@ -57,3 +57,4 @@ body > footer{
     bottom: 0;
     width: 100%;
 }
+
