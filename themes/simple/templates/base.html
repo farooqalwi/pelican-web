@@ -39,9 +39,9 @@
         <header id="banner" class="body">
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
         </header><!-- /#banner -->
-        <nav id="menu"><ul>
+        <nav id="menu">
         {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
+            <a href="{{ link }}">{{ title }}</a>
         {% endfor %}
         {% if DISPLAY_PAGES_ON_MENU %}
           {% for p in pages %}
@@ -53,7 +53,7 @@
             <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
           {% endfor %}
         {% endif %}
-        </ul></nav><!-- /#menu -->
+        </nav><!-- /#menu -->
         {% block content %}
         {% endblock %}
         <footer id="contentinfo" class="body">
