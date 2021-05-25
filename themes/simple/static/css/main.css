@@ -31,6 +31,10 @@ ul{
     display: flex;
 }
 
+ul li a{
+    padding: 1.6rem;
+    font-weight: bold;
+}
 
 ul li a:hover{
     color: turquoise;
