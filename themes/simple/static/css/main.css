@@ -45,7 +45,7 @@ body > article{
     grid-row: 3;
     grid-column: 1/-1;
     display: grid;
-    width: 100%;
+    min-width: 100%;
     grid-template-columns: repeat(12, [col-start] 1fr);
     grid-template-rows: auto;
     margin: 0;
