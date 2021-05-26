@@ -1,5 +1,6 @@
 Title: Assembly Language 1
 Date: 2021-04-23 02:50 PM
+Tags: Assembly
 Category: Assembly
 Authors: Alwi
 
