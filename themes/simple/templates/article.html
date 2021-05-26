@@ -46,12 +46,34 @@
 </section>
 
 <section class="meta-data">
-  <h3>Published</h3>
-  <h5>Apr 29, 2020</h5>
-  <h3>Category</h3>
-  <h5>Web Development</h5>
-  <h3>Tags</h3>
-  <h5>auth</h5>
+  <time class="published" datetime="{{ article.date.isoformat() }}">
+    {{ article.locale_date }}
+  </time>
+  {% if article.modified %}
+  <time class="modified" datetime="{{ article.modified.isoformat() }}">
+    {{ article.locale_modified }}
+  </time>
+  {% endif %}
+  {% if article.authors %}
+  <address class="vcard author">
+    By {% for author in article.authors %}
+        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+      {% endfor %}
+  </address>
+  {% endif %}
+  {% if article.category %}
+  <div class="category">
+      Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+  </div>
+  {% endif %}
+  {% if article.tags %}
+  <div class="tags">
+      Tags:
+      {% for tag in article.tags %}
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+      {% endfor %}
+  </div>
+  {% endif %}
 </section>
 </article>
 {% endblock %}
