@@ -1,5 +1,6 @@
 Title: Case Study 2
 Date: 2021-04-23 09:45
+Tags: Case Study
 Category: Case Study
 Authors: Alwi
 
