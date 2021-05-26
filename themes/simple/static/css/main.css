@@ -67,7 +67,7 @@ article > .post{
 
 article > .meta-data{
     grid-row: 1;
-    grid-column: -2/-1;
+    grid-column: -3/-1;
     padding: 25px;
 }
 
