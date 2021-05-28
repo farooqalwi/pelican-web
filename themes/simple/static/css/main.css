@@ -32,7 +32,7 @@ body > nav{
 
 ul{
     list-style: none;
-    display: grid;
+    display: flex;
 }
 
 ul li a{
