@@ -1,6 +1,5 @@
 body{
     display: grid;
-    width: 100%;
     min-height: 100vh;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: auto;
@@ -8,6 +7,10 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f8f8ff;
+
+    @-ms-viewport{
+        width: device-width;
+      }
 }
 
 body > header{
