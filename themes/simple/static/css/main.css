@@ -90,9 +90,7 @@ article > .toc{
     }
 
     article > .toc{
-        grid-row: 3;
-        grid-column: 3/-3;
-        padding: 25px;
+        display: none;
     }
 }
 
