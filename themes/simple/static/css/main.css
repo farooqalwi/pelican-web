@@ -60,6 +60,11 @@ article > .toc{
     padding: 25px;
 }
 
+.content ul{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 body > footer{
