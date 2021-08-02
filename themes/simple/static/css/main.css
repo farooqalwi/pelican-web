@@ -42,7 +42,7 @@ body section{
 
 body > .content > article{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
     padding: 0;
 }
