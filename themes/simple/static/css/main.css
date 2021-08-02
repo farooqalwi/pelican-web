@@ -23,7 +23,7 @@ body > header{
 ul{
     list-style: none;
     display: flex;
-    text-align: center;
+    align-items: center;
 }
 
 ul li a{
