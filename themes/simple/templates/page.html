@@ -13,8 +13,7 @@
 {% endblock %}
 
 {% block content %}
-    <section>
-      <h1>{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
 
@@ -25,5 +24,4 @@
         Last updated: {{ page.locale_modified }}
         </p>
     {% endif %}
-    </section>
 {% endblock %}
