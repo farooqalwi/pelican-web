@@ -58,21 +58,12 @@
       {% for title, link in MENUITEMS %}
       <li><a href="{{ link }}">{{ title }}</a></li>
       {% endfor %}
-      {% if DISPLAY_PAGES_ON_MENU %}
-      {% for p in pages %}
-      <li{% if p==page %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-      {% endfor %}
-      {% endif %}
 
-      {% if DISPLAY_CATEGORIES_ON_MENU %}
-      {% for cat, null in category %}
-        <li><a href="{{ SITEURL }}/{{ categories.url }}">Categories</a></li>
-          {% endfor %}
-          {% endif %}
+      <li></li><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Home</a></li>
+      <li></li><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categories</a></li>
+      <li><a href="{{ SITEURL }}/{{ TAGS_URL }}">Tags</a></li>
+      <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
 
-          <!-- <li {% if p=='categories' %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categories</a></li> -->
-          <li {% if p=='tags' %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ TAGS_URL }}">Tags</a></li>
-          <li {% if p=='archives' %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
     </ul>
   </header><!-- /#banner -->
 
