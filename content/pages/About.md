@@ -14,7 +14,7 @@ Authors: Alwi
 
 ___
 
-### I am an undergraduate student in the university of Karachi, an enthusiastic, dynamic, focused and highly motivated individual have a tendency to teach in inimitable ways.
+### I am an undergraduate student in the university of Karachi, an enthusiastic, dynamic and focused individual have a tendency to work in inimitable ways.
 
 <br>
 
