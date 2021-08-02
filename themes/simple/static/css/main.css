@@ -24,7 +24,7 @@ body > header{
 body > nav{
     grid-row: 2;
     grid-column: 1/-1;
-    background-color: #C0C0C0;
+    background-color: wheat;
     box-shadow: 0 5px 5px grey;
     margin: 0;
     padding-left: 25px;
