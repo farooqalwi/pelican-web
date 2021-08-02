@@ -12,6 +12,8 @@ body{
 }
 
 body > header{
+    display: flex;
+    flex-direction: row;
     padding-left: 25px;
     margin: 0;
     background-color: 	#696969;
