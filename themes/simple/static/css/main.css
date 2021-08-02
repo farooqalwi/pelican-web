@@ -63,6 +63,7 @@ article > .toc{
 .content ul{
     display: flex;
     flex-direction: column;
+    align-items: flex-start
 }
 
 
