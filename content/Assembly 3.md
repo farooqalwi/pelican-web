@@ -1,5 +1,5 @@
 Title: A program to display the digits in decimal from 0-7 in to 7-
-Date: 2021-04-23 03:07 PM
+Date: 2020-04-23 03:07 PM
 Tags: Assembly Language
 Category: Programming Exercise
 Authors: Alwi

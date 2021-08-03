@@ -1,5 +1,5 @@
 Title: A program to print a string.
-Date: 2021-04-23 03:02 PM
+Date: 2019-04-23 03:02 PM
 Tags: Assembly Language
 Category: Programming Exercise
 Authors: Alwi
