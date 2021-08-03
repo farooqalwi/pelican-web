@@ -3,8 +3,10 @@
 {% block title %}{{ SITENAME }} - Tags{% endblock %}
 
 {% block content %}
-    <h1>Tags for {{ SITENAME }}</h1>
-    <ul>
+    <h1 class="tags-heading">All Tags</h1>
+    <hr>
+
+    <ul class="tags-ul">
     {% for tag, articles in tags|sort %}
         <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
     {% endfor %}
