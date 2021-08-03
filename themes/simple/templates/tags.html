@@ -3,12 +3,16 @@
 {% block title %}{{ SITENAME }} - Tags{% endblock %}
 
 {% block content %}
-    <h1 class="tags-heading">All Tags</h1>
+<div class="tags-heading">
+    <h1>All Tags</h1>
     <hr>
+</div>
 
-    <ul class="tags-ul">
-    {% for tag, articles in tags|sort %}
+<div class="tags-ul">
+    <ul>
+        {% for tag, articles in tags|sort %}
         <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
-    {% endfor %}
+        {% endfor %}
     </ul>
+</div>
 {% endblock %}
