@@ -75,16 +75,11 @@ body > footer{
     padding: 20px 0 20px 0;
 }
 
-.content .tags-ul{
-    text-align: center;
+.content .tags-ul, .content .cats-ul, .content .tags-heading, .content .cats-heading{
     margin: 0 260px;
     padding: 0;
 }
 
-.content .tags-heading{
-    margin: 0 260px;
-}
-
-.content .tags-ul ul{
+.content .tags-ul ul, .content .cats-ul ul{
     padding-inline-start: 0;
 }
