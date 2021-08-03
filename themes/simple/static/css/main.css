@@ -80,6 +80,10 @@ body > footer{
     padding: 0;
 }
 
-.content .tags-ul ul, .content .cats-ul ul, .content .arch-dl dl{
+.content .tags-ul ul, .content .cats-ul ul{
     padding-inline-start: 0;
+}
+
+.content .arch-dl dl dd{
+    margin-inline-start: 0;
 }
