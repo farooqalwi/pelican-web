@@ -77,10 +77,14 @@ body > footer{
 
 .content .tags-ul{
     text-align: center;
-    margin: 0 160px;
+    margin: 0 260px;
     padding: 0;
 }
 
 .content .tags-heading{
-    margin: 0 160px;
+    margin: 0 260px;
+}
+
+.content .tags-ul ul{
+    padding-inline-start: 0;
 }
