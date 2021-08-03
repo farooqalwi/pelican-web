@@ -72,12 +72,20 @@
           {% endfor %}
           {% endif %} -->
 
-        {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL, SEARCH_URL with context %}
+        {% if not TAGS_URL %}
+        {% set TAGS_URL = 'tags.html' %}
+        {% else %}
+        {% set TAGS_URL = TAGS_URL %}
+        {% endif %}
+
+        <li {% if page_name=='tags' %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ TAGS_URL }}">Tags</a></li>
+
+        <!-- {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL%}
         <li {% if page_name=='categories' %} class="active" {% endif %}><a
             href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categories</a></li>
         <li {% if page_name=='tags' %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ TAGS_URL }}">Tags</a></li>
         <li {% if page_name=='archives' %} class="active" {% endif %}><a
-            href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+            href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li> -->
 
     </ul>
 
