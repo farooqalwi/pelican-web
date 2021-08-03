@@ -84,7 +84,7 @@ body > footer{
     padding-inline-start: 0;
 }
 
-.content .arch-links{
+.content .tags-ul, .content .cats-ul, content .arch-links{
     margin-top: 30px;
 }
 
