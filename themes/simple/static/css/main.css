@@ -87,3 +87,7 @@ body > footer{
 .content .arch-dl dl dd{
     margin-inline-start: 0;
 }
+
+hr.arch-hr{
+    border-bottom: 1px dotted #696969;
+}

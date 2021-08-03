@@ -9,11 +9,12 @@
 </div>
 
 <div class="arch-dl">
-    <dl>
-        {% for article in dates %}
-        <dt>{{ article.locale_date }}</dt>
-        <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+    {% for article in dates %}
+        <div>
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            {{ article.locale_date }}
+        </div>
+        <hr class="arch-hr">
         {% endfor %}
-    </dl>
 </div>
 {% endblock %}
