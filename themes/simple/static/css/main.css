@@ -75,11 +75,11 @@ body > footer{
     padding: 20px 0 20px 0;
 }
 
-.content .tags-ul, .content .cats-ul, .content .tags-heading, .content .cats-heading{
+.content .tags-ul, .content .cats-ul, .content .arch-dl, .content .tags-heading, .content .cats-heading, .content .arch-heading{
     margin: 0 260px;
     padding: 0;
 }
 
-.content .tags-ul ul, .content .cats-ul ul{
+.content .tags-ul ul, .content .cats-ul ul, .content .arch-dl dl{
     padding-inline-start: 0;
 }
