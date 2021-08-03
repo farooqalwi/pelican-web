@@ -19,20 +19,19 @@ body > header{
     background-color: #EFE3D0;
 }
 
-
-
-ul{
+body header ul{
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-ul li a{
+body header ul li a{
+    text-decoration: none;
     padding-right: 1.6rem;
     font-weight: bold;
 }
 
-ul li a:hover{
+body header ul li a:hover{
     color: orangered;
 }
 
