@@ -1,7 +1,7 @@
-Title: Assembly Language 3
+Title: A program to display the digits in decimal from 0-7 in to 7-
 Date: 2021-04-23 03:07 PM
-Tags: Assembly
-Category: Assembly
+Tags: Assembly Language
+Category: Programming Exercise
 Authors: Alwi
 
 ## Objective: Write a program to display the digits in decimal from 0-7 in to 7-

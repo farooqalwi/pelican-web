@@ -1,6 +1,6 @@
-Title: Case Study 2
+Title: The National Stadium, In Present Perspective
 Date: 2021-04-23 09:45
-Tags: Case Study
+Tags: The National Stadium
 Category: Case Study
 Authors: Alwi
 

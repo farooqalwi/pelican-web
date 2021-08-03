@@ -1,7 +1,7 @@
-Title: Psychology 1
+Title: PERSONALITY
 Date: 2021-04-23 03:14 PM
 Tags: Psychology
-Category: Psychology
+Category: Health
 Authors: Alwi
 
 # PERSONALITY

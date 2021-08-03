@@ -1,7 +1,7 @@
-Title: Assembly Language 1
+Title: A program to print a single character ‘A’.
 Date: 2021-04-23 02:50 PM
-Tags: Assembly
-Category: Assembly
+Tags: Assembly Language
+Category: Programming Exercise
 Authors: Alwi
 
 ## Objective: Write a program to print a single character ‘A’.
