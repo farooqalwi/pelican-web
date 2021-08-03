@@ -1,4 +1,4 @@
-Title: A code snippet in python that have number integer `12345` and it checks if the remainder with 2 of this number is even or odd.
+Title: A program to check remainder is even or odd to suggest addition/subtraction.
 Date: 2021-04-22 15:46
 Tags: Python
 Category: Programming Exercise
