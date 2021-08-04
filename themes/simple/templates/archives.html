@@ -32,10 +32,8 @@
 
 
     <div class="archs-post">
-        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-    </div>
-    <div class="arch-link" datetime="{{ article.date.isoformat() }}">
-        {{ article.locale_date }}
+        <div class="arch-link"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
+        <div class="arch-time">{{ article.locale_date }}</div>
     </div>
 
     {% endfor %}
