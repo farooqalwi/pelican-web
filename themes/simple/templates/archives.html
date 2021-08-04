@@ -3,18 +3,18 @@
 {% block title %}{{ SITENAME }} - Archives{% endblock %}
 
 {% block content %}
-<div class="arch-heading">
+<div class="archs-heading">
     <h1>All Posts</h1>
     <hr>
 </div>
 
-<div class="arch-links">
+<div class="archs-content">
     {% for article in dates %}
-    <div class="archs">
-        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-        <p class="archs-time">{{ article.locale_date }}</p>
+    <div class="archs-link">
+        <div class="arch-link"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
+        <div class="arch-time">{{ article.locale_date }}</div>
     </div>
-    <hr class="arch-hr">
+    <hr class="archs-hr">
     {% endfor %}
 </div>
 {% endblock %}
