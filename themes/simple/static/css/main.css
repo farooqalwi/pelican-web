@@ -92,10 +92,15 @@ body > footer{
     margin-top: 30px;
 }
 
+.content .archs-content{
+    display: block;
+}
+
 .archs-content .archs-post{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px dotted #696969;
+    margin-left: 96px;
 }
 
 .archs-post .arch-link a{
