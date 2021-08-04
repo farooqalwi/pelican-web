@@ -80,6 +80,10 @@ body > footer{
     padding: 0;
 }
 
+.content .tags-heading, .content .cats-heading, .content .archs-heading{
+    border-bottom: 2px;
+}
+
 .content .tags-ul ul, .content .cats-ul ul{
     padding-inline-start: 0;
 }
@@ -88,14 +92,8 @@ body > footer{
     margin-top: 30px;
 }
 
-hr.archs-hr{
-    border: none;
-    border-top: 1px dotted #696969;
-}
-
 .archs-content .archs-post{
     display: flex;
     justify-content: space-between;
-    /* border: none; */
-    border-top: 1px dotted #696969;
+    border-bottom: 1px dotted #696969;
 }
