@@ -104,4 +104,5 @@ body > footer{
 
 .archs-post .arch-link a:hover{
     text-decoration: underline;
+    color: #333;
 }
