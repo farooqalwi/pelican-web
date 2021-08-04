@@ -38,7 +38,7 @@
         {% if next_year != year %}
         
             {% else %}
-            <div class="archs-post" itemscope>
+            <div class="archs-post">
                 {% endif %}
                 {% endif %}
 
@@ -50,7 +50,7 @@
                     </small>
                     {% endif %}
                 </a>
-                <time class="arch-link" itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
+                <time class="arch-link" datetime="{{ article.date.isoformat() }}">
                     {{ article.locale_date }}
                 </time>
             </div>
