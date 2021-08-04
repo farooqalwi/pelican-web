@@ -31,32 +31,33 @@
     {% endif %}
 
     {% if loop.last %}
-    
-        {% else %}
-        {% set next_year = loop.nextitem.date.strftime('%Y') %}
 
-        {% if next_year != year %}
-        
-            {% else %}
-            <div class="archs-post">
-                {% endif %}
-                {% endif %}
+    {% else %}
+    {% set next_year = loop.nextitem.date.strftime('%Y') %}
 
-                <a href="{{ SITEURL }}/{{ article.url }}">
-                    {{ article.title }}
-                    {% if article.subtitle %}
-                    <small class="subtitle">
-                        {{ article.subtitle }}
-                    </small>
-                    {% endif %}
-                </a>
-                <time class="arch-link" datetime="{{ article.date.isoformat() }}">
-                    {{ article.locale_date }}
-                </time>
-            </div>
-            {% endfor %}
-        
+    {% if next_year != year %}
+
+    {% else %}
+    <div class="archs-post">
+        {% endif %}
+        {% endif %}
+
+        <a href="{{ SITEURL }}/{{ article.url }}">
+            {{ article.title }}
+            {% if article.subtitle %}
+            <small class="subtitle">
+                {{ article.subtitle }}
+            </small>
+            {% endif %}
+        </a>
+    </div>
+    <div class="arch-link" datetime="{{ article.date.isoformat() }}">
+        {{ article.locale_date }}
+    </div>
+
+    {% endfor %}
+
 </div>
 
 
-        {% endblock %}
+{% endblock %}
