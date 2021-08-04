@@ -12,7 +12,7 @@
     {% for article in dates %}
         <div>
             <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-            {{ article.locale_date }}
+            <time class="archs-time">{{ article.locale_date }}</time>
         </div>
         <hr class="arch-hr">
         {% endfor %}
