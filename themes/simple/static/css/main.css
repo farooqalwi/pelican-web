@@ -101,3 +101,7 @@ body > footer{
 .archs-post .arch-link a{
     text-decoration: none;
 }
+
+.archs-post .arch-link a:hover{
+    text-decoration: underline;
+}
