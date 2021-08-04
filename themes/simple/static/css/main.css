@@ -99,7 +99,7 @@ body > footer{
     margin-left: 96px;
 }
 
-.archs-post .arch-link a{
+.archs-post .arch-link a, .archs-content h2 a{
     text-decoration: none;
 }
 
@@ -111,5 +111,4 @@ body > footer{
 .archs-content h2{
     margin: 0;
     float: left;
-    text-decoration: none;
 }
