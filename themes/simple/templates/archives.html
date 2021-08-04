@@ -8,7 +8,7 @@
     <hr>
 </div>
 
-<div class="archs-content">
+<!-- <div class="archs-content">
     {% for article in dates %}
     <div class="archs-post">
         <div class="arch-link"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
@@ -16,5 +16,48 @@
     </div>
     <hr class="archs-hr">
     {% endfor %}
+</div> -->
+
+<div class="archs-content">
+    {% for article in dates %}
+    {% set year = article.date.strftime('%Y') %}
+    {% if loop.first %}
+    <h2 id="{{ year }}"><a href="#{{ year }}">{{ year }}</a></h2>
+    {% else %}
+    {% set prevyear = loop.previtem.date.strftime('%Y') %}
+    {% if prevyear != year %}
+    <h2 id="{{ year }}"><a href="#{{ year }}">{{ year }}</a></h2>
+    {% endif %}
+    {% endif %}
+
+    {% if loop.last %}
+    <div itemscope class="last-entry-of-year">
+        {% else %}
+        {% set next_year = loop.nextitem.date.strftime('%Y') %}
+
+        {% if next_year != year %}
+        <div itemscope class="last-entry-of-year">
+            {% else %}
+            <div class="archs-post" itemscope>
+                {% endif %}
+                {% endif %}
+
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    {{ article.title }}
+                    {% if article.subtitle %}
+                    <small class="subtitle">
+                        {{ article.subtitle }}
+                    </small>
+                    {% endif %}
+                </a>
+                <time class="arch-link" itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
+                    {{ article.locale_date }}
+                </time>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
-{% endblock %}
+
+
+        {% endblock %}
