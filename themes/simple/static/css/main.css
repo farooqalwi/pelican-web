@@ -89,7 +89,7 @@ body > footer{
 }
 
 hr.archs-hr{
-    border-bottom: 1px dotted #696969;
+    border-bottom: 1px dotted;
 }
 
 .archs-content .archs-post{
