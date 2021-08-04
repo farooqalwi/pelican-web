@@ -81,8 +81,7 @@ body > footer{
 }
 
 .content .tags-heading, .content .cats-heading, .content .archs-heading{
-    border: none;
-    border-bottom: 2px;
+    border-bottom: 2px solid;
 }
 
 .content .tags-ul ul, .content .cats-ul ul{
