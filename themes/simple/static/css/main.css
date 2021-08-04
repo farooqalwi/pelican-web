@@ -97,3 +97,7 @@ body > footer{
     justify-content: space-between;
     border-bottom: 1px dotted #696969;
 }
+
+.archs-post .arch-link a{
+    text-decoration: none;
+}
