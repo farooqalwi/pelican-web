@@ -96,4 +96,6 @@ hr.archs-hr{
 .archs-content .archs-post{
     display: flex;
     justify-content: space-between;
+    /* border: none; */
+    border-top: 1px dotted #696969;
 }
