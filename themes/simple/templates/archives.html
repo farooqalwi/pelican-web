@@ -31,12 +31,12 @@
     {% endif %}
 
     {% if loop.last %}
-    <div itemscope class="last-entry-of-year">
+    
         {% else %}
         {% set next_year = loop.nextitem.date.strftime('%Y') %}
 
         {% if next_year != year %}
-        <div itemscope class="last-entry-of-year">
+        
             {% else %}
             <div class="archs-post" itemscope>
                 {% endif %}
@@ -55,8 +55,7 @@
                 </time>
             </div>
             {% endfor %}
-        </div>
-    </div>
+        
 </div>
 
 
