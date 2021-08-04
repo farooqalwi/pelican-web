@@ -84,7 +84,7 @@ body > footer{
     padding-inline-start: 0;
 }
 
-.content .tags-ul, .content .cats-ul, .content .archs-contents{
+.content .tags-ul, .content .cats-ul, .content .archs-content{
     margin-top: 30px;
 }
 
@@ -92,10 +92,7 @@ hr.archs-hr{
     border-bottom: 1px dotted #696969;
 }
 
-.archs-link .arch-link{
-    float: left;
-}
-
-.archs-link .arch-time{
-    float: right;
+.archs-content .archs-post{
+    display: flex;
+    justify-content: space-between;
 }
