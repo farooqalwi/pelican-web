@@ -5,10 +5,10 @@ const cssmin = require('gulp-cssmin');
 // Task to minify css using package cssmin
 gulp.task('default', () => {
      // Folder with files to minify
-     return gulp.src('./css/*.css')
+     return gulp.src('./toOptimizeCSS/*.css')
      //The method pipe() allow you to chain multiple tasks together 
      //I execute the task to minify the files
     .pipe(cssmin())
     //I define the destination of the minified files with the method dest
-    .pipe(gulp.dest('./themes/simple/static/css'));
+    .pipe(gulp.dest('./theme/static/css'));
 });
