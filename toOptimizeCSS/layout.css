@@ -8,7 +8,6 @@ html, body {
 body{
     display: flex;
     flex-direction: column;
-    background-color: #f8f8ff;
 }
 
 body > header{
@@ -16,7 +15,6 @@ body > header{
     flex-direction: row;
     padding-left: 25px;
     margin: 0;
-    background-color: #EFE3D0;
 }
 
 
@@ -29,12 +27,9 @@ ul{
 
 ul li a{
     padding-right: 1.6rem;
-    font-weight: bold;
 }
 
-ul li a:hover{
-    color: orangered;
-}
+
 
 body section{
     flex: 1;
@@ -68,7 +63,6 @@ article > .toc{
 
 
 body > footer{
-    background-color:#EFE3D0;
     text-align: center;
     width: 100%;
     padding: 20px 0 20px 0;
@@ -99,14 +93,7 @@ body > footer{
     margin-left: 96px;
 }
 
-.archs-post .arch-link a, .archs-content h2 a{
-    text-decoration: none;
-}
 
-.archs-post .arch-link a:hover{
-    text-decoration: underline;
-    color: #333;
-}
 
 .archs-content h2{
     margin: 0;

@@ -1,0 +1,12 @@
+
+ul li a{
+    font-weight: bold;
+}
+
+.archs-post .arch-link a, .archs-content h2 a{
+    text-decoration: none;
+}
+
+.archs-post .arch-link a:hover{
+    text-decoration: underline;
+}
