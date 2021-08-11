@@ -11,16 +11,8 @@ gulp.task('default', function() {
         //The method pipe() allow you to chain multiple tasks together 
         //It executes the task to minify the files
         .pipe(cssmin())
+        //It concates all css files into one file
         .pipe(concat('main.css'))
         //It defines the destination of the minified files with the method dest
-        .pipe(gulp.dest('./optimizeedCSS'));
+        .pipe(gulp.dest('./theme/static/css'));
 });
-
-// gulp.task('concatCSS', function() {
-//     return gulp.src('./optimizeedCSS/*.css')
-//         .pipe(concat('main.css'))
-//         .pipe(gulp.dest('./theme/static/css'));
-// });
-
-
-// gulp.task('default', ['minifyCSS', 'concatCSS'], function(){});
