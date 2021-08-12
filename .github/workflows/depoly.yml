@@ -1,4 +1,4 @@
-name: Deploy Pelican Web
+ name: Deploy Pelican Web
 on:
   push:
     branches:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout website source
         id: checkout-master
         uses: actions/checkout@v2
-        - name: Cache dependencies
+      - name: Cache dependencies
         uses: actions/cache@v2
         with:
           path: ~/.cache/pip
@@ -26,7 +26,6 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Run Gulp
-        uses: ./
         run: gulp
       - name: Run Pelican
         id: run-pelican
