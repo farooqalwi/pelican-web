@@ -26,7 +26,8 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Run Gulp
-        run: gulp
+        run: |
+          gulp
       - name: Run Pelican
         id: run-pelican
         run: |
