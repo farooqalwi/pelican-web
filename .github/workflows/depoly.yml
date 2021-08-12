@@ -1,4 +1,4 @@
- name: Deploy Pelican Web
+name: Deploy Pelican Web
 on:
   push:
     branches:
@@ -25,6 +25,8 @@ jobs:
       - name: Install Pelican
         run: |
           pip install -r requirements.txt
+      - name: Run Gulp
+        run: gulp
       - name: Run Pelican
         id: run-pelican
         run: |
