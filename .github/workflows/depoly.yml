@@ -16,7 +16,6 @@ jobs:
         id: checkout-master
         uses: actions/checkout@v2
       - name: Run Gulp
-        uses: ./
         run: gulp
       - name: Cache dependencies
         uses: actions/cache@v2
