@@ -24,10 +24,10 @@ jobs:
       - name: Install Pelican
         run: |
           pip install -r requirements.txt
+      - name: Cache dependencies
       - name: Run Gulp
         uses: ./
         run: gulp
-      - name: Cache dependencies
       - name: Run Pelican
         id: run-pelican
         run: |
