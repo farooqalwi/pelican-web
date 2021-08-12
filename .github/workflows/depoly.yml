@@ -16,7 +16,7 @@ jobs:
         id: checkout-master
         uses: actions/checkout@v2
       - name: Install Yarn
-        run: yarn add
+        run: yarn install
       - name: Run Gulp
         run: gulp
       - name: Cache dependencies
