@@ -7,7 +7,7 @@ const concat = require('gulp-concat');
 // Task to minify css using package cssmin
 gulp.task('default', function() {
     // Folder with files to minify
-    return gulp.src('./toOptimizeCSS/*.css')
+    return gulp.src('./css/*.css')
         //The method pipe() allow you to chain multiple tasks together 
         //It executes the task to minify the files
         .pipe(cssmin())
