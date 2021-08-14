@@ -7,6 +7,7 @@ Authors: Alwi
 ## Objective: Write a program to display the digits in decimal from 0-7 in to 7-
 
 ## ource Code:
+
 ```
 mov  al,80h          =>make  all  port
 out  1f,al           =>out  80h  to  port
@@ -21,7 +22,6 @@ out  19h,al          =>mov  3  to  port int  3
 ............(so  on  to  9)
 ```
 
-
-
 ## Output:
+
 ![Assembly Language 3](images/AL-3.1.JPG "AL-3 output")

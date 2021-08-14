@@ -7,11 +7,12 @@ Authors: Alwi
 ## Objective: Write a program to print a string. (i.e. ALWI)
 
 ## ource Code:
+
 ```
 .model  		// It is an assembler directive that specifies the size of the program
 .stack 100h	    // It declares size of stack
 .data			// In this segment variables are declared
-.code			// It is code segment directive 
+.code			// It is code segment directive
 
 main proc		// main procedures start from here
 
@@ -38,8 +39,8 @@ main endp		// Main procedures end here
 end main		// whole programs end here
 ```
 
-
 ## Output:
+
 ![Assembly Language 2](images/AL-2.1.JPG "AL-2 output")
 ![Assembly Language 2](images/AL-2.2.JPG "AL-2 output")
 ![Assembly Language 2](images/AL-2.3.JPG "AL-2 output")

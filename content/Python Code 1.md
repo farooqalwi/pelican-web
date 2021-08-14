@@ -5,11 +5,15 @@ Category: Programming Exercise
 Authors: Alwi
 
 ## Lab Task: Objective
+
 ### write a code snippet in python that have number integer `12345` and it checks if the remainder with 2 of this number is even or odd.
+
 ### If the remainder is even then the the digits will be added i.e `1+2+3+4+5`
+
 ### If the remainder is odd then the digits will be subtracted i.e `-1-2-3-4-5`
 
 ## Code:
+
 ```Python
 num = 12345
 if num % 2 == 0:
@@ -27,4 +31,5 @@ else:
 ```
 
 ## Output:
+
 ![Python](images/PY-1.1.JPG "PY-1 output")

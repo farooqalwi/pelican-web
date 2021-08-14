@@ -1,20 +1,19 @@
-body{
-    background-color: #f8f8ff;
+body {
+  background-color: #f8f8ff;
 }
 
-body > header{
-    background-color: #EFE3D0;
+body > header {
+  background-color: #efe3d0;
 }
 
-ul li a:hover{
-    color: orangered;
+ul li a:hover {
+  color: orangered;
 }
 
-body > footer{
-    background-color:#EFE3D0;
+body > footer {
+  background-color: #efe3d0;
 }
 
-
-.archs-post .arch-link a:hover{
-    color: #333;
+.archs-post .arch-link a:hover {
+  color: #333;
 }

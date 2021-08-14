@@ -1,101 +1,104 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-body > header{
-    display: flex;
-    flex-direction: row;
-    padding-left: 25px;
-    margin: 0;
+body > header {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  margin: 0;
 }
 
-
-
-ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-ul li a{
-    padding-right: 1.6rem;
+ul li a {
+  padding-right: 1.6rem;
 }
 
-
-
-body section{
-    flex: 1;
+body section {
+  flex: 1;
 }
 
-body > .content > article{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
+body > .content > article {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
-article > .post{
-    margin: 25px 0 25px 0;
-    padding: 10px;
+article > .post {
+  margin: 25px 0 25px 0;
+  padding: 10px;
 }
 
-article > .meta-data{
-    padding: 25px;
+article > .meta-data {
+  padding: 25px;
 }
 
-article > .toc{
-    padding: 25px;
+article > .toc {
+  padding: 25px;
 }
 
-.content ul{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start
+.content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-
-body > footer{
-    text-align: center;
-    width: 100%;
-    padding: 20px 0 20px 0;
+body > footer {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 20px 0;
 }
 
-.content .tags-ul, .content .cats-ul, .content .archs-content, .content .tags-heading, .content .cats-heading, .content .archs-heading{
-    margin: 0 80px 0 260px;
-    padding: 0;
+.content .tags-ul,
+.content .cats-ul,
+.content .archs-content,
+.content .tags-heading,
+.content .cats-heading,
+.content .archs-heading {
+  margin: 0 80px 0 260px;
+  padding: 0;
 }
 
-.content .tags-heading, .content .cats-heading, .content .archs-heading{
-    border-bottom: 2px solid;
+.content .tags-heading,
+.content .cats-heading,
+.content .archs-heading {
+  border-bottom: 2px solid;
 }
 
-.content .tags-ul ul, .content .cats-ul ul{
-    padding-inline-start: 0;
+.content .tags-ul ul,
+.content .cats-ul ul {
+  padding-inline-start: 0;
 }
 
-.content .tags-ul, .content .cats-ul, .content .archs-content{
-    margin-top: 30px;
+.content .tags-ul,
+.content .cats-ul,
+.content .archs-content {
+  margin-top: 30px;
 }
 
-
-.archs-content .archs-post{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px dotted #696969;
-    margin-left: 96px;
+.archs-content .archs-post {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #696969;
+  margin-left: 96px;
 }
 
-
-
-.archs-content h2{
-    margin: 0;
-    float: left;
+.archs-content h2 {
+  margin: 0;
+  float: left;
 }
