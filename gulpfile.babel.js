@@ -14,7 +14,7 @@ gulp.task("default", function () {
       //It executes the task to minify the files
       .pipe(cssmin())
       //It converts the css that most browsers can undestand it
-      .pipe(postcss([postcssPresetEnv({ stage: 1 })]))
+      .pipe(postcss([postcssPresetEnv()]))
       //It concates all css files into one file
       .pipe(concat("main.css"))
       //It defines the destination of the minified files with the method dest
