@@ -17,8 +17,7 @@ gulp.task("default", function () {
       .pipe(
         postcss([
           postcssPresetEnv({
-            stage: 2,
-            features: { "place-properties": true },
+            stage: 3,
           }),
         ])
       )
