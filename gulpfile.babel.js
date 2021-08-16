@@ -18,6 +18,9 @@ gulp.task("default", function () {
         postcss([
           postcssPresetEnv({
             stage: 3,
+            features: {
+              "nesting-rules": true,
+            },
           }),
         ])
       )
