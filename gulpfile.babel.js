@@ -19,7 +19,13 @@ gulp.task("default", function () {
           postcssPresetEnv({
             stage: 3,
             features: {
+              "any-link-pseudo-class": true,
+              "custom-selectors": true,
+              "gray-function": true,
+              "hexadecimal-alpha-notation": true,
               "nesting-rules": true,
+              "place-properties": true,
+              "system-ui-font-family": true,
             },
           }),
         ])
