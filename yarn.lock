@@ -2787,6 +2787,13 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
+rfs@^9.0.5:
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/rfs/-/rfs-9.0.5.tgz#7eb83ad32d40fa72cb4ad2d2b016a0afaafe9d2a"
+  integrity sha512-Q47GQDvVFnEBoz+0kQXVvLgkYWWbzfvkY/z/Hp572l+uO8hLHKovdRi5h/mwdl36tFBKf31BZscycjaABXY/Fg==
+  dependencies:
+    postcss-value-parser "^4.1.0"
+
 safe-buffer@^5.1.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"

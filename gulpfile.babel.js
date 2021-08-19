@@ -4,6 +4,7 @@ const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
 const postcssPresetEnv = require("postcss-preset-env");
 const magician = require("postcss-font-magician");
+const rfs = require("rfs");
 
 // Task to minify css using package cssmin
 gulp.task("default", function () {
@@ -33,6 +34,8 @@ gulp.task("default", function () {
       )
       //Font Magician generates @font-face rules. Never write a @font-face rule again.
       .pipe(postcss([magician({})]))
+      //RFS is a unit resizing engine which was initially developed to resize font sizes
+      .pipe(rfs())
       //It concates all css files into one file
       .pipe(concat("main.css"))
       //It defines the destination of the minified files with the method dest
