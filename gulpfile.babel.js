@@ -31,7 +31,8 @@ gulp.task("default", function () {
           }),
         ])
       )
-      .pipe(postcss([require(magician)({})]))
+      //Font Magician generates @font-face rules. Never write a @font-face rule again.
+      .pipe(postcss([require("postcss-font-magician")({})]))
       //It concates all css files into one file
       .pipe(concat("main.css"))
       //It defines the destination of the minified files with the method dest
