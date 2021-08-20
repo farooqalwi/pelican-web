@@ -4,7 +4,7 @@ const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
 const postcssPresetEnv = require("postcss-preset-env");
 const magician = require("postcss-font-magician");
-const rfs = require("rfs");
+const rfs = require("rfs/postcss");
 
 // Task to minify css using package cssmin
 gulp.task("default", function () {
