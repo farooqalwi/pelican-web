@@ -35,7 +35,7 @@ gulp.task("default", function () {
       //Font Magician generates @font-face rules. Never write a @font-face rule again.
       .pipe(postcss([magician({})]))
       //RFS is a unit resizing engine which was initially developed to resize font sizes
-      .pipe(postcss(rfs()))
+      .pipe(postcss([rfs()]))
       //It concates all css files into one file
       .pipe(concat("main.css"))
       //It defines the destination of the minified files with the method dest
