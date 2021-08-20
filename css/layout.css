@@ -14,7 +14,7 @@ body {
 body > header {
   display: flex;
   flex-direction: row;
-  padding-left: 25px;
+  padding-left: rfs(25px);
   margin: 0;
 }
 
@@ -25,7 +25,7 @@ ul {
 }
 
 ul li a {
-  padding-right: 1.6rem;
+  padding-right: rfs(1.6rem);
 }
 
 body section {
@@ -40,16 +40,16 @@ body > .content > article {
 }
 
 article > .post {
-  margin: 25px 0 25px 0;
-  padding: 10px;
+  margin: rfs(25px) 0 rfs(25px) 0;
+  padding: rfs(10px);
 }
 
 article > .meta-data {
-  padding: 25px;
+  padding: rfs(25px);
 }
 
 article > .toc {
-  padding: 25px;
+  padding: rfs(25px);
 }
 
 .content ul {
@@ -61,7 +61,7 @@ article > .toc {
 body > footer {
   text-align: center;
   width: 100%;
-  padding: 20px 0 20px 0;
+  padding: rfs(20px) 0 rfs(20px) 0;
 }
 
 .content .tags-ul,
@@ -70,14 +70,14 @@ body > footer {
 .content .tags-heading,
 .content .cats-heading,
 .content .archs-heading {
-  margin: 0 80px 0 260px;
+  margin: 0 rfs(80px) 0 rfs(260px);
   padding: 0;
 }
 
 .content .tags-heading,
 .content .cats-heading,
 .content .archs-heading {
-  border-bottom: 2px solid;
+  border-bottom: rfs(2px) solid;
 }
 
 .content .tags-ul ul,
@@ -88,14 +88,14 @@ body > footer {
 .content .tags-ul,
 .content .cats-ul,
 .content .archs-content {
-  margin-top: 30px;
+  margin-top: rfs(30px);
 }
 
 .archs-content .archs-post {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dotted #696969;
-  margin-left: 96px;
+  border-bottom: rfs(1px) dotted #696969;
+  margin-left: rfs(96px);
 }
 
 .archs-content h2 {
