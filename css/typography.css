@@ -10,3 +10,27 @@ ul li a {
 .archs-post .arch-link a:hover {
   text-decoration: underline;
 }
+
+h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: rfs(2.4rem);
+}
+h2 {
+  font-size: rfs(2.2rem);
+}
+h3 {
+  font-size: rfs(2rem);
+}
+
+ul li a {
+  font-family: "Playfair Display", serif;
+  font-size: rfs(0.963rem);
+}
