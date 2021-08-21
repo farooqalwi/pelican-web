@@ -2,7 +2,6 @@ const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
-const postcssPresetEnv = require("postcss-preset-env");
 const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
 
@@ -15,23 +14,6 @@ gulp.task("default", function () {
       //The method pipe() allow you to chain multiple tasks together
       //It executes the task to minify the files
       .pipe(cssmin())
-      //It converts the css that most browsers can undestand it
-      .pipe(
-        postcss([
-          postcssPresetEnv({
-            stage: 3,
-            features: {
-              "any-link-pseudo-class": true,
-              "custom-selectors": true,
-              "gray-function": true,
-              "hexadecimal-alpha-notation": true,
-              "nesting-rules": true,
-              "place-properties": true,
-              "system-ui-font-family": true,
-            },
-          }),
-        ])
-      )
       //magician generates all @font-face rules. We never have to write a @font-face rule again.
       .pipe(postcss([magician()]))
       //RFS is a unit resizing engine which was initially developed to resize font sizes
