@@ -1,12 +1,15 @@
-const gulp = require("gulp");
+const { src, dest, watch, series } = require('gulp');
 const postcss = require("gulp-postcss");
 const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
 const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
+const browsersync = require('browser-sync').create();
+
+
 
 // Task to minify css using package cssmin
-gulp.task("default", function () {
+gulp.task("cssTasks", function () {
   // Folder with files to minify
   return (
     gulp
@@ -24,3 +27,34 @@ gulp.task("default", function () {
       .pipe(gulp.dest("./static/css"))
   );
 });
+
+// browsersyncServe Task
+function browsersyncServe(cb) {
+  browsersync.init({
+    server: {
+      baseDir: '.'
+    }
+  });
+  cb();
+}
+
+
+// browsersyncReload Task
+function browsersyncReload(cb) {
+  browsersync.reload();
+  cb();
+}
+
+
+// Default Gulp Task
+exports.default = series(
+  cssTasks,
+  browsersyncServe,
+  watchTask
+);
+
+// Watch Task
+function watchTask() {
+  watch('./docs/*.html', browsersyncReload);
+  watch(['./css/*.css'], series(cssTasks, browsersyncReload));
+}
