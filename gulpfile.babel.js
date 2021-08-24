@@ -1,12 +1,10 @@
-const { src, dest, watch, series } = require('gulp');
+const { src, dest, watch, series } = require("gulp");
 const postcss = require("gulp-postcss");
 const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
 const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
-const browsersync = require('browser-sync').create();
-
-
+const browsersync = require("browser-sync").create();
 
 // Task to minify css using package cssmin
 gulp.task("cssTasks", function () {
@@ -32,12 +30,11 @@ gulp.task("cssTasks", function () {
 function browsersyncServe(cb) {
   browsersync.init({
     server: {
-      baseDir: '.'
-    }
+      baseDir: ".",
+    },
   });
   cb();
 }
-
 
 // browsersyncReload Task
 function browsersyncReload(cb) {
@@ -45,16 +42,11 @@ function browsersyncReload(cb) {
   cb();
 }
 
-
 // Default Gulp Task
-exports.default = series(
-  cssTasks,
-  browsersyncServe,
-  watchTask
-);
+exports.default = series(cssTasks, browsersyncServe, watchTask);
 
 // Watch Task
 function watchTask() {
-  watch('./docs/*.html', browsersyncReload);
-  watch(['./css/*.css'], series(cssTasks, browsersyncReload));
+  watch("./docs/*.html", browsersyncReload);
+  watch(["./css/*.css"], series(cssTasks, browsersyncReload));
 }
