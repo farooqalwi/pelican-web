@@ -20,7 +20,7 @@ function cssTasks() {
     //It concates all css files into one file
     .pipe(concat("main.css"))
     //It defines the destination of the minified files with the method dest
-    .pipe(gulp.dest("./static/css"))
+    .pipe(dest("./static/css"))
 }
 
 // browsersyncServe Task
