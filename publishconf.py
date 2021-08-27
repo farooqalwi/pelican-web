@@ -11,7 +11,10 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-
+if len(sys.argv) > 2:
+    SITEURL = "https://farooqalwi.github.io/pelican-web"
+else:
+    SITEURL = ""
 
 RELATIVE_URLS = False
 
