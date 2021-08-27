@@ -47,6 +47,5 @@ function watchTask() {
   watch(["./css/*.css"], series(cssTasks, browsersyncReload));
 }
 
-
 // Default Gulp Task
 exports.default = series(cssTasks, browsersyncServe, watchTask);

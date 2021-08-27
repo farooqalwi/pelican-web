@@ -3,7 +3,7 @@
 
 AUTHOR = "ALWI"
 SITENAME = "Pelican Web"
-SITEURL = "https://farooqalwi.github.io/pelican-web"
+SITEURL = ""
 THEME = "./"
 
 PATH = "content"
