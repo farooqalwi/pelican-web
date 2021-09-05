@@ -53,5 +53,3 @@ if ("CI") {
 } else {
   exports.default = series(cssTasks, browsersyncServe, watchTask);
 }
-
-
