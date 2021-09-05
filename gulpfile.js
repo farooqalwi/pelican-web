@@ -56,4 +56,4 @@ const buildContent = () => exec("invoke regenerate");
 const build = series(cssTasks, cleanOutput, cleanStatic, buildContent);
 
 // Default Gulp Task
-//exports.default = series(build, browsersyncServe, watchTask);
+exports.default = series(build, browsersyncServe, watchTask);
