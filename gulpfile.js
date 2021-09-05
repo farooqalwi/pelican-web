@@ -50,7 +50,6 @@ function watchTask() {
 // Default Gulp Task
 if (process.env.ENV_VARIABLE) {
   exports.default = series(cssTasks, browsersyncServe, watchTask);
-}
-else {
+} else {
   exports.default = series(cssTasks);
 }
