@@ -5,7 +5,7 @@ const concat = require("gulp-concat");
 const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
 const browsersync = require("browser-sync").create();
-const exec = require('child_process');
+const exec = require("child_process");
 
 // Task to minify css using package cssmin
 function cssTasks() {
@@ -53,14 +53,7 @@ const cleanStatic = () => exec("rm -rf static/");
 
 const buildContent = () => exec("invoke regenerate");
 
-
-const build = series(
-  cssTasks,
-  cleanOutput,
-  cleanStatic,
-  buildContent
-)
-
+const build = series(cssTasks, cleanOutput, cleanStatic, buildContent);
 
 // Default Gulp Task
 //exports.default = series(build, browsersyncServe, watchTask);
