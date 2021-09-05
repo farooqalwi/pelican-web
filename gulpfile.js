@@ -51,5 +51,5 @@ function watchTask() {
 if (process.env.ENV_VARIABLE) {
   exports.default = series(cssTasks);
 } else {
-  exports.default = series(cssTasks, browsersyncServe, watchTask);
+  //exports.default = series(cssTasks, browsersyncServe, watchTask);
 }
