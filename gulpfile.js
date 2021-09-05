@@ -5,7 +5,7 @@ const concat = require("gulp-concat");
 const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
 const browsersync = require("browser-sync").create();
-const exec = require("child_process");
+const exec = require("child_process").exec;
 
 // Task to minify css using package cssmin
 function cssTasks() {
