@@ -1,10 +1,11 @@
-const { src, dest, watch, series } = require("gulp");
+const { src, dest, watch, series, parallel } = require("gulp");
 const postcss = require("gulp-postcss");
 const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
 const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
 const browsersync = require("browser-sync").create();
+const exec = require('child_process');
 
 // Task to minify css using package cssmin
 function cssTasks() {
@@ -47,9 +48,19 @@ function watchTask() {
   watch(["./css/*.css"], series(cssTasks, browsersyncReload));
 }
 
+const cleanOutput = () => exec("rm -rf outout/");
+const cleanStatic = () => exec("rm -rf static/");
+
+const buildContent = () => exec("invoke regenerate");
+
+
+const build = series(
+  cssTasks,
+  cleanOutput,
+  cleanStatic,
+  buildContent
+)
+
+
 // Default Gulp Task
-if ("CI") {
-  exports.default = series(cssTasks);
-} else {
-  exports.default = series(cssTasks, browsersyncServe, watchTask);
-}
+//exports.default = series(build, browsersyncServe, watchTask);
