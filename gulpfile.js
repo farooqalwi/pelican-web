@@ -43,11 +43,11 @@ function browsersyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-  watch("./docs/*.html", browsersyncReload);
+  watch("./output/*.html", browsersyncReload);
   watch(["./css/*.css"], series(cssTasks, browsersyncReload));
 }
 
 // Default Gulp Task
-// exports.default = series(cssTasks, browsersyncServe, watchTask);
+exports.default = series(cssTasks, browsersyncServe, watchTask);
 
-exports.default = series(cssTasks);
+// exports.default = series(cssTasks);
