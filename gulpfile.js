@@ -10,6 +10,7 @@ const execSync = require("child_process").execSync;
 // Task to minify css using package cssmin
 function cssTasks() {
   // Folder with files to minify
+  console.log("Inside cassTask");
   return (
     src("./css/*.css")
       //The method pipe() allow you to chain multiple tasks together
@@ -28,6 +29,7 @@ function cssTasks() {
 
 // browsersyncServe Task
 function browsersyncServe(cb) {
+  console.log("Inside browsersyncServe");
   browsersync.init({
     server: {
       baseDir: ".",
@@ -38,12 +40,14 @@ function browsersyncServe(cb) {
 
 // browsersyncReload Task
 function browsersyncReload(cb) {
+  console.log("Inside reload");
   browsersync.reload();
   cb();
 }
 
 // Watch Task
 function watchTask() {
+  console.log("Inside watchTask");
   watch("./output/*.html", browsersyncReload);
   watch(["./css/*.css"], series(cssTasks, browsersyncReload));
 }
