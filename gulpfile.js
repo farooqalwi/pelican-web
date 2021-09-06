@@ -61,4 +61,4 @@ const buildContent = () => execSync("pelican content");
 // Default Gulp Task
 // exports.default = series(build, parallel(browsersyncServe, watchTask));
 
-exports.default = series(cssTasks, parallel(browsersyncServe, watchTask));
+//exports.default = series(cssTasks, parallel(browsersyncServe, watchTask));
