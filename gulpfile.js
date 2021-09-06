@@ -56,7 +56,9 @@ const cleanOutput = () => execSync("if exist output rd output /s /q");
 const cleanStatic = () => execSync("if exist static rd static /s /q");
 const buildContent = () => execSync("pelican content");
 
-const build = series(cleanOutput, cleanStatic, cssTasks, buildContent);
+// const build = series(cleanOutput, cleanStatic, cssTasks, buildContent);
 
 // Default Gulp Task
-exports.default = series(build, parallel(browsersyncServe, watchTask));
+// exports.default = series(build, parallel(browsersyncServe, watchTask));
+
+exports.default = series(cssTasks, parallel(browsersyncServe, watchTask));
