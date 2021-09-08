@@ -31,7 +31,7 @@ function browsersyncServe(cb) {
   console.log("Inside browsersyncServe");
   browsersync.init({
     server: {
-      baseDir: ".",
+      baseDir: "./output",
     },
   });
   cb();
