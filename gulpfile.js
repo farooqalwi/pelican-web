@@ -5,12 +5,11 @@ const concat = require("gulp-concat");
 const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
 const browsersync = require("browser-sync").create();
-const execSync = require("child_process").execSync;
+const exec = require("child_process").exec;
 
 // Task to minify css using package cssmin
 function cssTasks() {
   // Folder with files to minify
-  console.log("Inside cassTask");
   return (
     src("./css/*.css")
       //The method pipe() allow you to chain multiple tasks together
@@ -40,25 +39,21 @@ function browsersyncServe(cb) {
 
 // browsersyncReload Task
 function browsersyncReload(cb) {
-  console.log("Inside reload");
   browsersync.reload();
   cb();
 }
 
 // Watch Task
 function watchTask() {
-  console.log("Inside watchTask");
   watch("./output/*.html", browsersyncReload);
   watch(["./css/*.css"], series(cssTasks, browsersyncReload));
 }
 
-const cleanOutput = () => execSync("if exist output rd output /s /q");
-const cleanStatic = () => execSync("if exist static rd static /s /q");
-const buildContent = () => execSync("pelican content");
+const cleanOutput = () => exec("if exist output rd output /s /q");
+const cleanStatic = () => exec("if exist static rd static /s /q");
+const buildContent = () => exec("pelican content");
 
-// const build = series(cleanOutput, cleanStatic, cssTasks, buildContent);
+const build = series(cleanOutput, cleanStatic, cssTasks, buildContent);
 
 // Default Gulp Task
-// exports.default = series(build, parallel(browsersyncServe, watchTask));
-
-//exports.default = series(cssTasks, parallel(browsersyncServe, watchTask));
+exports.default = series(build, parallel(browsersyncServe, watchTask));
