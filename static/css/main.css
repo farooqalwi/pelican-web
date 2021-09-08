@@ -1,0 +1,478 @@
+body {
+  background-color: #f8f8ff;
+}
+body > footer,
+body > header {
+  background-color: #efe3d0;
+}
+ul li a:hover {
+  color: #ff4500;
+}
+.archs-post .arch-link a:hover {
+  color: #333;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+body > header {
+  display: flex;
+  flex-direction: row;
+  padding-left: calc(1.28125rem + 0.375vw);
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  body > header {
+    padding-left: 1.5625rem;
+  }
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+ul li a {
+  padding-right: calc(1.285rem + 0.42vw);
+}
+@media (min-width: 1200px) {
+  ul li a {
+    padding-right: 1.6rem;
+  }
+}
+body section {
+  flex: 1;
+}
+body > .content > article {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+article > .post {
+  margin: calc(1.28125rem + 0.375vw) 0 calc(1.28125rem + 0.375vw) 0;
+  padding: 0.625rem;
+}
+@media (min-width: 1200px) {
+  article > .post {
+    margin: 1.5625rem 0 1.5625rem 0;
+  }
+}
+article > .meta-data,
+article > .toc {
+  padding: calc(1.28125rem + 0.375vw);
+}
+@media (min-width: 1200px) {
+  article > .meta-data,
+  article > .toc {
+    padding: 1.5625rem;
+  }
+}
+.content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body > footer {
+  text-align: center;
+  width: 100%;
+  padding: 1.25rem 0 1.25rem 0;
+}
+.content .archs-content,
+.content .archs-heading,
+.content .cats-heading,
+.content .cats-ul,
+.content .tags-heading,
+.content .tags-ul {
+  margin: 0 calc(1.625rem + 4.5vw) 0 calc(2.75rem + 18vw);
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  .content .archs-content,
+  .content .archs-heading,
+  .content .cats-heading,
+  .content .cats-ul,
+  .content .tags-heading,
+  .content .tags-ul {
+    margin: 0 5rem 0 16.25rem;
+  }
+}
+.content .archs-heading,
+.content .cats-heading,
+.content .tags-heading {
+  border-bottom: 0.125rem solid;
+}
+.content .cats-ul ul,
+.content .tags-ul ul {
+  padding-inline-start: 0;
+}
+.content .archs-content,
+.content .cats-ul,
+.content .tags-ul {
+  margin-top: calc(1.3125rem + 0.75vw);
+}
+@media (min-width: 1200px) {
+  .content .archs-content,
+  .content .cats-ul,
+  .content .tags-ul {
+    margin-top: 1.875rem;
+  }
+}
+.archs-content .archs-post {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.0625rem dotted #696969;
+  margin-left: calc(1.725rem + 5.7vw);
+}
+@media (min-width: 1200px) {
+  .archs-content .archs-post {
+    margin-left: 6rem;
+  }
+}
+.archs-content h2 {
+  margin: 0;
+  float: left;
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXt_A_Q.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA-Q.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXt_A_w.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTXt_A_Q.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTXtHA-Q.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTXt_A_w.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 600;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUXt_A_Q.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUXtHA-Q.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUXt_A_w.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UXt_A_Q.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UXtHA-Q.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UXt_A_w.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 800;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUXt_A_Q.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUXtHA-Q.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUXt_A_w.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUXt_A_Q.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUXtHA-Q.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUXt_A_w.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDZbtc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDZbtU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vXDZbtc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vXDXbtM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vXDZbtU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDZbtc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDXbtM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDZbtU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDZbtc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDZbtU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 800;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDZbtc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDZbtU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDZbtc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDXbtM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/playfairdisplay/v21/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDZbtU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local(OpenSans-LightItalic),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hlIqc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hrIqM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hlIqU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local(OpenSans-Italic),
+    url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Xdck.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Zdc0.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Xdcs.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans SemiBold Italic"), local(OpenSans-SemiBoldItalic),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhlIqc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhrIqM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhlIqU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), local(OpenSans-BoldItalic),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhlIqc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhrIqM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhlIqU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold Italic"), local(OpenSans-ExtraBoldItalic),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hlIqc.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hrIqM.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hlIqU.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local(OpenSans-Light),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOht.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOhv.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local(OpenSans-Regular),
+    url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50f.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50d.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"), local(OpenSans-SemiBold),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOht.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhp.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOhv.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local(OpenSans-Bold),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOht.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOhv.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold"), local(OpenSans-ExtraBold),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOht.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOhv.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3ROp4.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup8.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3ROp6.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BAyo3ROp4.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BAyo3Sup8.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BAyo3ROp6.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 600;
+  src: url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B7y03ROp4.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B7y03Sup8.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B7y03ROp6.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i03ROp4.eot?#)
+      format("eot"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i03Sup8.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/s/dancingscript/v15/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i03ROp6.woff)
+      format("woff");
+}
+.archs-content h2 a,
+.archs-post .arch-link a {
+  text-decoration: none;
+}
+.archs-post .arch-link a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: calc(1.365rem + 1.38vw);
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+h2 {
+  font-size: calc(1.345rem + 1.14vw);
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+h3 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+ul li a {
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-size: 0.963rem;
+}
