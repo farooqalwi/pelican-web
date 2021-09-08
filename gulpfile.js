@@ -45,8 +45,7 @@ function browsersyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-  watch("./output/*.html", browsersyncReload);
-  watch(["./css/*.css"], series(cssTasks, browsersyncReload));
+  watch(["./css/*.css"], series(build, browsersyncReload));
 }
 
 const cleanOutput = () => exec("if exist output rd output /s /q");
