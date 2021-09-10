@@ -22,13 +22,13 @@ function cssTasks() {
       //It concates all css files into one file
       .pipe(concat("main.css"))
       //It defines the destination of the minified files with the method dest
-      .pipe(dest("./static/css"))
+      // .pipe(dest("./static/css")) // with pelican
+      .pipe(dest("./output/theme/css"))
   );
 }
 
 // browsersyncServe Task
 function browsersyncServe(cb) {
-  console.log("Inside browsersyncServe");
   browsersync.init({
     server: {
       baseDir: "./output",
@@ -49,10 +49,20 @@ function watchTask() {
 }
 
 const cleanOutput = () => exec("if exist output rd output /s /q");
-const cleanStatic = () => exec("if exist static rd static /s /q");
+// const cleanCSS = () => exec("if exist static rd static /s /q"); //with pelican
+const cleanCSS = () =>
+  exec("if exist output/theme cd output && rd theme /s /q");
 const buildContent = () => exec("pelican content");
 
-const build = series(cleanOutput, cleanStatic, cssTasks, buildContent);
+// with pelican
+// build files
+//  const build = series(cleanOutput, cleanCSS, cssTasks, buildContent);
+
+// Default Gulp Task
+// exports.default = series(build, parallel(browsersyncServe, watchTask));
+
+// build files
+const build = series(cleanCSS, cssTasks);
 
 // Default Gulp Task
 exports.default = series(build, parallel(browsersyncServe, watchTask));
