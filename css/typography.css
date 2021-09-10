@@ -1,36 +1,47 @@
-ul li a {
-  font-weight: bold;
+:root {
+  --sansFontFamily: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --monoFontFamily: "PT Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
-.archs-post .arch-link a,
-.archs-content h2 a {
+body h1 a {
+  font-family: var(--monoFontFamily);
+}
+
+ul li a {
+  font-family: var(--sansFontFamily);
+  font-size: 1rem;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.archs-post .arch-link a:hover {
+.archs-post .arch-link a,
+.content div ul li a {
+  font-family: var(--sansFontFamily);
+  font-size: 0.963rem;
+  text-decoration: none;
+}
+
+.archs-post .arch-link a:hover,
+.content div ul li a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  font-family: "Dancing Script", cursive;
+.archs-content h2 a {
+  text-decoration: none;
+  font-family: var(--sansFontFamily);
+  font-weight: 400;
 }
 
-h2,
-h3 {
-  font-family: "Open Sans", sans-serif;
+.archs-post .arch-time {
+  font-family: var(--sansFontFamily);
+  font-size: 0.8rem;
 }
 
-h1 {
-  font-size: rfs(2.4rem);
-}
-h2 {
-  font-size: rfs(2.2rem);
-}
-h3 {
-  font-size: rfs(2rem);
+.content div h1 {
+  font-family: var(--serifHeadingFontFamily);
+  font-weight: 400;
+  font-size: 2em;
 }
 
-ul li a {
-  font-family: "Playfair Display", serif;
-  font-size: rfs(0.963rem);
+.content div ul li a {
 }

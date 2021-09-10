@@ -6,14 +6,24 @@ body > header {
   background-color: #efe3d0;
 }
 
-ul li a:hover {
-  color: orangered;
+ul li a:hover,
+ul li a:focus {
+  color: #555;
 }
 
 body > footer {
   background-color: #efe3d0;
 }
 
-.archs-post .arch-link a:hover {
-  color: #333;
+.archs-post .arch-link a,
+.content div ul li a {
+  color: #3875d7;
+}
+
+.archs-content h2 a {
+  color: inherit;
+}
+
+.content div h1 {
+  color: inherit;
 }
