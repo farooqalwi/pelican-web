@@ -1,9 +1,30 @@
+:root {
+  --mutedTextColor: #696969;
+}
+
 body {
   background-color: #f8f8ff;
 }
 
 body > header {
   background-color: #efe3d0;
+}
+
+body header h1 a {
+  color: black;
+}
+
+header ul li {
+  line-height: 44px;
+}
+
+header ul li.active {
+  background-color: rgb(180, 180, 180);
+}
+
+body header ul li a {
+  color: var(--mutedTextColor);
+  display: block;
 }
 
 ul li a:hover,

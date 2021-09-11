@@ -11,10 +11,23 @@ body {
   flex-direction: column;
 }
 
+body header {
+  align-items: center;
+}
+
 body > header {
   display: flex;
   flex-direction: row;
   padding-left: rfs(25px);
+  margin: 0;
+  height: 44px;
+}
+
+body header h1 {
+  margin: 0;
+}
+
+body header ul {
   margin: 0;
 }
 
@@ -25,7 +38,7 @@ ul {
 }
 
 ul li a {
-  padding-right: rfs(1.6rem);
+  padding: rfs(0 1.6rem);
 }
 
 body section {

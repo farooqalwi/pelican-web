@@ -3,8 +3,14 @@
   --monoFontFamily: "PT Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
-body h1 a {
+body header h1 {
   font-family: var(--monoFontFamily);
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body header h1 a {
+  text-decoration: none;
 }
 
 ul li a {
@@ -41,7 +47,4 @@ ul li a {
   font-family: var(--serifHeadingFontFamily);
   font-weight: 400;
   font-size: 2em;
-}
-
-.content div ul li a {
 }

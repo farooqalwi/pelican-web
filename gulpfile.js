@@ -22,8 +22,8 @@ function cssTasks() {
       //It concates all css files into one file
       .pipe(concat("main.css"))
       //It defines the destination of the minified files with the method dest
-      // .pipe(dest("./static/css")) // with pelican
-      .pipe(dest("./output/theme/css"))
+      .pipe(dest("./static/css")) // with pelican
+    // .pipe(dest("./output/theme/css"))
   );
 }
 
