@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #f8f8ff;
+  background-color: #fffcf8;
 }
 
 body > header {
@@ -47,4 +47,10 @@ body > footer {
 
 .content div h1 {
   color: inherit;
+}
+
+.content .tags-heading,
+.content .cats-heading,
+.content .archs-heading {
+  color: maroon;
 }

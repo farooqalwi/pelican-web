@@ -13,12 +13,13 @@ body {
 
 body header {
   align-items: center;
+  justify-content: space-between;
 }
 
 body > header {
   display: flex;
   flex-direction: row;
-  padding-left: rfs(25px);
+  padding: rfs(0 25px);
   margin: 0;
   height: 44px;
 }
@@ -41,8 +42,26 @@ ul li a {
   padding: rfs(0 1.6rem);
 }
 
-body section {
+body .content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .tags-heading,
+.content .cats-heading,
+.content .archs-heading,
+.content .tags-ul,
+.content .cats-ul,
+.content .archs-content {
+  margin: rfs(15px 8rem 0px 20rem);
+  padding: 0;
+}
+
+.content .tags-ul,
+.content .cats-ul,
+.content .archs-content {
+  line-height: 20px;
 }
 
 body > .content > article {
@@ -77,20 +96,11 @@ body > footer {
   padding: rfs(20px 0 20px 0);
 }
 
-.content .tags-ul,
-.content .cats-ul,
-.content .archs-content,
-.content .tags-heading,
-.content .cats-heading,
-.content .archs-heading {
-  margin: rfs(0 80px 0 260px);
-  padding: 0;
-}
-
-.content .tags-heading,
-.content .cats-heading,
-.content .archs-heading {
+.content .tags-heading h1,
+.content .cats-heading h1,
+.content .archs-heading h1 {
   border-bottom: rfs(2px solid);
+  margin: 0;
 }
 
 .content .tags-ul ul,
@@ -98,17 +108,13 @@ body > footer {
   padding-inline-start: 0;
 }
 
-.content .tags-ul,
-.content .cats-ul,
-.content .archs-content {
-  margin-top: rfs(30px);
-}
-
 .archs-content .archs-post {
   display: flex;
   justify-content: space-between;
   border-bottom: rfs(1px dotted #696969);
-  margin-left: rfs(96px);
+  margin-left: 6rem;
+  overflow: auto;
+  padding: 0.3rem 0.2rem;
 }
 
 .archs-content h2 {
