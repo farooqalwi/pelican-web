@@ -1,0 +1,56 @@
+:root {
+  --sansFontFamily: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --monoFontFamily: "PT Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+body header h1 {
+  font-family: var(--monoFontFamily);
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body header h1 a {
+  text-decoration: none;
+}
+
+ul li a {
+  font-family: var(--sansFontFamily);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.archs-post .arch-link a,
+.content div ul li a {
+  font-family: var(--sansFontFamily);
+  font-size: 0.963rem;
+  text-decoration: none;
+}
+
+.archs-post .arch-link a:hover,
+.content div ul li a:hover {
+  text-decoration: underline;
+}
+
+.archs-content h2 a {
+  text-decoration: none;
+  font-family: var(--sansFontFamily);
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.archs-post .arch-time {
+  font-family: var(--sansFontFamily);
+  font-size: 0.8rem;
+}
+
+.content div h1 {
+  font-family: var(--serifHeadingFontFamily);
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.content .archs-heading h1 {
+  font-size: 2.4rem;
+  line-height: 1.3em;
+}

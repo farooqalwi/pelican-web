@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>Pelican Web - A program to print a string.</title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Pelican" />
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="https://farooqalwi.github.io/pelican-web/theme/css/main.css" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link
+    href="https://farooqalwi.github.io/pelican-web/feeds/all.atom.xml"
+    type="application/atom+xml" rel="alternate" title="Pelican Web Full Atom Feed" />
+  <link
+    href="https://farooqalwi.github.io/pelican-web/feeds/programming-exercise.atom.xml"
+    type="application/atom+xml" rel="alternate" title="Pelican Web Categories Atom Feed" />
+
+
+
+
+<meta name="tags" content="Assembly Language" />
+
+</head>
+
+<body id="index" class="home">
+  <header id="banner" class="body">
+    <h1><a href="https://farooqalwi.github.io/pelican-web/">Pelican Web</a>
+    </h1>
+
+    <ul>
+
+      <li><a href="https://farooqalwi.github.io/pelican-web/pages/about-me.html">About Me</a></li>
+      <li><a href="https://farooqalwi.github.io/pelican-web/pages/contact.html">Contact</a></li>
+
+        <li ><a
+            href="https://farooqalwi.github.io/pelican-web/categories.html">Categories</a></li>
+        <li ><a href="https://farooqalwi.github.io/pelican-web/tags.html">Tags</a></li>
+        <li ><a href="https://farooqalwi.github.io/pelican-web/archives.html">Archives</a>
+        </li>
+
+
+    </ul>
+
+  </header>
+
+  <section class="content">
+<article>
+<section class="toc">
+  <h2>Table of contents</h2>
+  <h3>Pyhton Projects</h3>
+  <h3>C# Projects</h3>
+  <h3>Java Projects</h3>
+  <h3>Rust Projects</h3>
+  <h3>JavaScript Projects</h3>
+</section>
+
+<section class="post">
+  <header>
+    <h2 class="entry-title">
+      <a href="https://farooqalwi.github.io/pelican-web/a-program-to-print-a-string.html" rel="bookmark" title="Permalink to A program to print a string.">A program to print a string.</a>
+    </h2>
+    
+  </header>
+
+  <h2>Objective: Write a program to print a string. (i.e. ALWI)</h2>
+<h2>ource Code:</h2>
+<div class="highlight"><pre><span></span><code><span class="na">.model</span>          <span class="c1">// It is an assembler directive that specifies the size of the program</span>
+<span class="na">.stack</span> <span class="mi">100</span><span class="no">h</span>     <span class="c1">// It declares size of stack</span>
+<span class="na">.data</span>           <span class="c1">// In this segment variables are declared</span>
+<span class="na">.code</span>           <span class="c1">// It is code segment directive</span>
+
+<span class="nf">main</span> <span class="no">proc</span>       <span class="c1">// main procedures start from here</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">A</span><span class="err">&#39;</span>     <span class="c1">// &#39;A&#39; is moving to Data Register</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">L</span><span class="err">&#39;</span>     <span class="c1">// &#39;L&#39; is moving to Data Register</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">W</span><span class="err">&#39;</span>     <span class="c1">// &#39;W&#39; is moving to Data Register&gt;</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">DL</span><span class="p">,</span> <span class="err">&#39;</span><span class="no">I</span><span class="err">&#39;</span>     <span class="c1">// &#39;I&#39; is moving to Data Register</span>
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">02</span><span class="no">h</span>     <span class="c1">// Service Routine is being defined here to print the character to AH</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>     <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">mov</span> <span class="no">ah</span><span class="p">,</span> <span class="mi">4</span><span class="no">ch</span>     <span class="c1">// Using 4ch service routine number to display</span>
+<span class="nf">int</span> <span class="mi">21</span><span class="no">h</span>         <span class="c1">// Programs are returned to windows from DOS</span>
+
+<span class="nf">main</span> <span class="no">endp</span>       <span class="c1">// Main procedures end here</span>
+<span class="nf">end</span> <span class="no">main</span>        <span class="c1">// whole programs end here</span>
+</code></pre></div>
+
+<h2>Output:</h2>
+<p><img alt="Assembly Language 2" src="images/AL-2.1.JPG" title="AL-2 output">
+<img alt="Assembly Language 2" src="images/AL-2.2.JPG" title="AL-2 output">
+<img alt="Assembly Language 2" src="images/AL-2.3.JPG" title="AL-2 output"></p>
+</section>
+
+<section class="meta-data">
+  <time class="published" datetime="2019-04-23T15:02:00+05:00">
+    Tue 23 April 2019
+  </time>
+  <address class="vcard author">
+    By         <a class="url fn" href="https://farooqalwi.github.io/pelican-web/author/alwi.html">Alwi</a>
+  </address>
+  <div class="category">
+      Category: <a href="https://farooqalwi.github.io/pelican-web/category/programming-exercise.html">Programming Exercise</a>
+  </div>
+  <div class="tags">
+      Tags:
+          <a href="https://farooqalwi.github.io/pelican-web/tag/assembly-language.html">Assembly Language</a>
+  </div>
+</section>
+</article>
+  </section>
+
+
+  <footer id="contentinfo" class="body">
+    <address id="about" class="vcard body">
+      Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+      which takes great advantage of <a href="https://www.python.org/">Python</a>.
+    </address><!-- /#about -->
+  </footer><!-- /#contentinfo -->
+</body>
+
+</html>

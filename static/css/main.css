@@ -1,0 +1,222 @@
+:root {
+  --mutedTextColor: #696969;
+}
+body {
+  background-color: #fffcf8;
+}
+body > header {
+  background-color: #efe3d0;
+}
+body header h1 a {
+  color: #000;
+}
+header ul li {
+  line-height: 44px;
+}
+header ul li.active {
+  background-color: #b4b4b4;
+}
+body header ul li a {
+  color: var(--mutedTextColor);
+  display: block;
+}
+ul li a:focus,
+ul li a:hover {
+  color: #555;
+}
+body > footer {
+  background-color: #efe3d0;
+}
+.archs-post .arch-link a,
+.content div ul li a {
+  color: #3875d7;
+}
+.archs-content h2 a,
+.content div h1 {
+  color: inherit;
+}
+.content .archs-heading,
+.content .cats-heading,
+.content .tags-heading {
+  color: maroon;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  align-items: center;
+  justify-content: space-between;
+}
+body > header {
+  display: flex;
+  flex-direction: row;
+  padding: 0 calc(1.28125rem + 0.375vw);
+  margin: 0;
+  height: 44px;
+}
+@media (min-width: 1200px) {
+  body > header {
+    padding: 0 1.5625rem;
+  }
+}
+body header h1,
+body header ul {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+ul li a {
+  padding: 0 calc(1.285rem + 0.42vw);
+}
+@media (min-width: 1200px) {
+  ul li a {
+    padding: 0 1.6rem;
+  }
+}
+body .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content .archs-content,
+.content .archs-heading,
+.content .cats-heading,
+.content .cats-ul,
+.content .tags-heading,
+.content .tags-ul {
+  margin: 0.9375rem calc(1.925rem + 8.1vw) 0 calc(3.125rem + 22.5vw);
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  .content .archs-content,
+  .content .archs-heading,
+  .content .cats-heading,
+  .content .cats-ul,
+  .content .tags-heading,
+  .content .tags-ul {
+    margin: 0.9375rem 8rem 0 20rem;
+  }
+}
+.content .archs-content,
+.content .cats-ul,
+.content .tags-ul {
+  line-height: 20px;
+}
+body > .content > article {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+article > .post {
+  margin: calc(1.28125rem + 0.375vw) 0 calc(1.28125rem + 0.375vw) 0;
+  padding: 0.625rem;
+}
+@media (min-width: 1200px) {
+  article > .post {
+    margin: 1.5625rem 0 1.5625rem 0;
+  }
+}
+article > .meta-data,
+article > .toc {
+  padding: calc(1.28125rem + 0.375vw);
+}
+@media (min-width: 1200px) {
+  article > .meta-data,
+  article > .toc {
+    padding: 1.5625rem;
+  }
+}
+.content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body > footer {
+  text-align: center;
+  width: 100%;
+  padding: 1.25rem 0 1.25rem 0;
+}
+.content .archs-heading h1,
+.content .cats-heading h1,
+.content .tags-heading h1 {
+  border-bottom: 0.125rem solid;
+  margin: 0;
+}
+.content .cats-ul ul,
+.content .tags-ul ul {
+  padding-inline-start: 0;
+}
+.archs-content .archs-post {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.0625rem dotted #696969;
+  margin-left: 6rem;
+  overflow: auto;
+  padding: 0.3rem 0.2rem;
+}
+.archs-content h2 {
+  margin: 0;
+  float: left;
+}
+:root {
+  --sansFontFamily: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --monoFontFamily: "PT Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+body header h1 {
+  font-family: var(--monoFontFamily);
+  font-size: 20px;
+  font-weight: 200;
+}
+.archs-content h2 a,
+.archs-post .arch-link a,
+.archs-post .arch-time,
+.content div ul li a,
+ul li a {
+  font-family: var(--sansFontFamily);
+}
+body header h1 a {
+  text-decoration: none;
+}
+ul li a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.archs-post .arch-link a,
+.content div ul li a {
+  font-size: 0.963rem;
+  text-decoration: none;
+}
+.archs-post .arch-link a:hover,
+.content div ul li a:hover {
+  text-decoration: underline;
+}
+.archs-content h2 a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.archs-post .arch-time {
+  font-size: 0.8rem;
+}
+.content div h1 {
+  font-family: var(--serifHeadingFontFamily);
+  font-weight: 400;
+  font-size: 2em;
+}
+.content .archs-heading h1 {
+  font-size: 2.4rem;
+  line-height: 1.3em;
+}

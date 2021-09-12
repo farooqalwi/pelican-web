@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - Archives{% endblock %}
+
+{% block content %}
+<div class="archs-heading">
+    <h1>All Posts</h1>
+</div>
+
+<div class="archs-content">
+    {% for article in dates %}
+    {% set year = article.date.strftime('%Y') %}
+    {% if loop.first %}
+    <h2 id="{{ year }}"><a href="#{{ year }}">{{ year }}</a></h2>
+    {% else %}
+    {% set prevyear = loop.previtem.date.strftime('%Y') %}
+    {% if prevyear != year %}
+    <h2 id="{{ year }}"><a href="#{{ year }}">{{ year }}</a></h2>
+    {% endif %}
+    {% endif %}
+
+
+    <div class="archs-post">
+        <div class="arch-link"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
+        <div class="arch-time">{{ article.locale_date }}</div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}

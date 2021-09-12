@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican Web</title><link href="https://farooqalwi.github.io/pelican-web/" rel="alternate"></link><link href="https://farooqalwi.github.io/pelican-web/feeds/all.atom.xml" rel="self"></link><id>https://farooqalwi.github.io/pelican-web/</id><updated>2021-04-23T15:28:00+05:00</updated><entry><title>A program that prints on the console the current date and time.</title><link href="https://farooqalwi.github.io/pelican-web/a-program-that-prints-on-the-console-the-current-date-and-time.html" rel="alternate"></link><published>2021-04-23T15:28:00+05:00</published><updated>2021-04-23T15:28:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2021-04-23:/pelican-web/a-program-that-prints-on-the-console-the-current-date-and-time.html</id><summary type="html">&lt;h2&gt;Objective 1: Write a program that prints on the console the current date and time.&lt;/h2&gt;
+&lt;h2&gt;Source Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Collections.Generic&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Text&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Threading.Tasks&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="nn"&gt;Chapter_1._1&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;//Write a program that prints on the console the current date and time.&lt;/span&gt;
+    &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Program&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;void …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Objective 1: Write a program that prints on the console the current date and time.&lt;/h2&gt;
+&lt;h2&gt;Source Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Collections.Generic&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Text&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Threading.Tasks&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="nn"&gt;Chapter_1._1&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;//Write a program that prints on the console the current date and time.&lt;/span&gt;
+    &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Program&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="n"&gt;Console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WriteLine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Current time is: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;+&lt;/span&gt;&lt;span class="n"&gt;DateTime&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Now&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+            &lt;span class="n"&gt;Console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ReadLine&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Output:&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="C#" src="images/C-1.JPG" title="C#-1 output"&gt;&lt;/p&gt;</content><category term="Programming Exercise"></category><category term="C#"></category></entry><entry><title>A program to print a single character ‘A’.</title><link href="https://farooqalwi.github.io/pelican-web/a-program-to-print-a-single-character-a.html" rel="alternate"></link><published>2021-04-23T14:50:00+05:00</published><updated>2021-04-23T14:50:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2021-04-23:/pelican-web/a-program-to-print-a-single-character-a.html</id><summary type="html">&lt;h2&gt;Objective: Write a program to print a single character ‘A’.&lt;/h2&gt;
+&lt;h2&gt;ource Code&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.model&lt;/span&gt;          &lt;span class="c1"&gt;// It is an assembler directive that specifies the size of the program&lt;/span&gt;
+&lt;span class="na"&gt;.stack&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// It declares size of stack&lt;/span&gt;
+&lt;span class="na"&gt;.data&lt;/span&gt;           &lt;span class="c1"&gt;// In this segment variables are declared&lt;/span&gt;
+&lt;span class="na"&gt;.code&lt;/span&gt;           &lt;span class="c1"&gt;// It is code segment directive&lt;/span&gt;
+
+&lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="no"&gt;proc&lt;/span&gt;       &lt;span class="c1"&gt;// main procedures …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Objective: Write a program to print a single character ‘A’.&lt;/h2&gt;
+&lt;h2&gt;ource Code&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.model&lt;/span&gt;          &lt;span class="c1"&gt;// It is an assembler directive that specifies the size of the program&lt;/span&gt;
+&lt;span class="na"&gt;.stack&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// It declares size of stack&lt;/span&gt;
+&lt;span class="na"&gt;.data&lt;/span&gt;           &lt;span class="c1"&gt;// In this segment variables are declared&lt;/span&gt;
+&lt;span class="na"&gt;.code&lt;/span&gt;           &lt;span class="c1"&gt;// It is code segment directive&lt;/span&gt;
+
+&lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="no"&gt;proc&lt;/span&gt;       &lt;span class="c1"&gt;// main procedures start from here&lt;/span&gt;
+
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;DL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="no"&gt;A&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;     &lt;span class="c1"&gt;// ‘A’ is moving to Data Register&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;ah&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;02&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// Service Routine is being defined here to print the character&lt;/span&gt;
+&lt;span class="nf"&gt;int&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;         &lt;span class="c1"&gt;// Programs are returned to windows from DOS&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;ah&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="no"&gt;ch&lt;/span&gt;     &lt;span class="c1"&gt;// Using 4ch service routine number to display&lt;/span&gt;
+&lt;span class="nf"&gt;int&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;         &lt;span class="c1"&gt;// Programs are returned to windows from DOS&lt;/span&gt;
+
+&lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="no"&gt;endp&lt;/span&gt;       &lt;span class="c1"&gt;// Main procedures end here&lt;/span&gt;
+&lt;span class="nf"&gt;end&lt;/span&gt; &lt;span class="no"&gt;main&lt;/span&gt;        &lt;span class="c1"&gt;// whole programs end here&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Output:&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Assembly Language 1" src="images/AL-1.1.JPG" title="AL-1 output"&gt;
+&lt;img alt="Assembly Language 1" src="images/AL-1.2.JPG" title="AL-1 output"&gt;
+&lt;img alt="Assembly Language 1" src="images/AL-1.3.JPG" title="AL-1 output"&gt;&lt;/p&gt;</content><category term="Programming Exercise"></category><category term="Assembly Language"></category></entry><entry><title>The National Stadium, In Present Perspective</title><link href="https://farooqalwi.github.io/pelican-web/the-national-stadium-in-present-perspective.html" rel="alternate"></link><published>2021-04-23T09:45:00+05:00</published><updated>2021-04-23T09:45:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2021-04-23:/pelican-web/the-national-stadium-in-present-perspective.html</id><summary type="html">&lt;h1&gt;The National Stadium, In Present Perspective&lt;/h1&gt;
+&lt;h2&gt;Overview:&lt;/h2&gt;
+&lt;p&gt;The national stadium located in the heart of Karachi, the biggest and the most populated city also known as city of light. This is a cricket stadium, owned by PCB (Pakistan Cricket Board) which was stablished on 21st April in 1955. It has …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;The National Stadium, In Present Perspective&lt;/h1&gt;
+&lt;h2&gt;Overview:&lt;/h2&gt;
+&lt;p&gt;The national stadium located in the heart of Karachi, the biggest and the most populated city also known as city of light. This is a cricket stadium, owned by PCB (Pakistan Cricket Board) which was stablished on 21st April in 1955. It has the capacity of 34228 spectators.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The National Stadium" src="images/CS-2.1.JPG" title="The National Stadium"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;Challenges:&lt;/h2&gt;
+&lt;p&gt;In 2009 in Lahore due to terrorist attack on Siri Lankan Team, All the international teams had refused to play in Pakistan, but after a lot of struggles now international teams are ready to play in Pakistan and they played some games as PSL recently. So, Pakistan got an opportunity to get a profitable revenue in this regard.
+Pakistan made a lot of changes in National stadium and tried to provide strongest security services in recent PSL matches, but there are a lot of some other defects which people of the city had to face. So, to generate a good revenue in this way PCB (Pakistan Cricket Board) has to follow a broad roadmap or suggestions to build a fruitful revenue from this stadium.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;Solution:&lt;/h2&gt;
+&lt;p&gt;First of all, PCB has to provide digital way for tickets distribution, if they use digital mechanism then have all records like how many tickets were sold and how many seats still remain, by this way PCB can get one more benefit which is corruption in tickets distribution as some tickets are sold in black which is not a good way to distribute the ticket and no amount is submitted in PCB account. Another thing is the traffic solution, people had to face traffic blockage during tournament which is a cause of problem and difficulty so PCB has to provide some suitable alternates or has to shift stadium to a new place because current stadium is situated in the heart of the city which is a busy place of the city. PCB can also use its website for tickets distribution.
+PCB had done some works regarding renovation of National Stadium Karachi recently that was a good job but there are still a lot of things which can be done in the development of this stadium like there can be used High-Definition HD Screen to facilitate the spectators to keep up to date with every moment.
+For security surveillance PCB has to use 360 HD Dome cameras to monitor the whole area as well as use armed forces at different check post and collect intelligence report from secret intelligence.
+If PCB arrange alternate place for stadium then a lot of problems can be solved like near the current stadium, roads are very narrow so, people have to face heavy traffic jams and there are very less hotels near the stadium so foreigner has less facility to stay the nearest hotel. Two biggest hospital like Liaqat National Hospital and Aga Khan Hospital are situated adjacent the stadium so people also have to face issues to go to the hospitals.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The National Stadium" src="images/CS-2.2.JPG" title="Conceptual Diagram"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The National Stadium" src="images/CS-2.3.JPG" title="IPO Diagram"&gt;&lt;/p&gt;</content><category term="Case Study"></category><category term="The National Stadium"></category></entry><entry><title>A program that prints the first 100 members of the sequence 2, -3, 4, -5, 6, -7, 8.</title><link href="https://farooqalwi.github.io/pelican-web/a-program-that-prints-the-first-100-members-of-the-sequence-2-3-4-5-6-7-8.html" rel="alternate"></link><published>2020-04-23T15:32:00+05:00</published><updated>2020-04-23T15:32:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2020-04-23:/pelican-web/a-program-that-prints-the-first-100-members-of-the-sequence-2-3-4-5-6-7-8.html</id><summary type="html">&lt;h2&gt;Objective 1: Write a program that prints the first 100 members of the sequence 2, -3, 4, -5, 6, -7, 8.&lt;/h2&gt;
+&lt;h2&gt;Source Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Collections.Generic&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Linq&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Text&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Threading.Tasks&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="nn"&gt;Chapter_1._2&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;//Write a program that prints the first 100 …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Objective 1: Write a program that prints the first 100 members of the sequence 2, -3, 4, -5, 6, -7, 8.&lt;/h2&gt;
+&lt;h2&gt;Source Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Collections.Generic&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Linq&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Text&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="nn"&gt;System.Threading.Tasks&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="nn"&gt;Chapter_1._2&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;//Write a program that prints the first 100 members of the sequence 2, -3, 4, -5, 6, -7, 8.&lt;/span&gt;
+    &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Program&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;+&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;+&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(-&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="n"&gt;Console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;\t&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;+&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="n"&gt;Console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;\t&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;+&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="n"&gt;Console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ReadKey&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Output:&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="C#" src="images/C-2.JPG" title="C#-2 output"&gt;&lt;/p&gt;</content><category term="Programming Exercise"></category><category term="C#"></category></entry><entry><title>PERSONALITY</title><link href="https://farooqalwi.github.io/pelican-web/personality.html" rel="alternate"></link><published>2020-04-23T15:14:00+05:00</published><updated>2020-04-23T15:14:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2020-04-23:/pelican-web/personality.html</id><summary type="html">&lt;h1&gt;PERSONALITY&lt;/h1&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;The purpose of this assignment is to give a discussion on personality development as an educational objective. A roadmap is designed in which personality is described as a high-level concept which refers to a person’s characteristic ways of interacting with the environment. I chose for the analysis …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;PERSONALITY&lt;/h1&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;The purpose of this assignment is to give a discussion on personality development as an educational objective. A roadmap is designed in which personality is described as a high-level concept which refers to a person’s characteristic ways of interacting with the environment. I chose for the analysis of the environment on the development of the person’s internal representation. &lt;br&gt;
+I described the personality as being an individual’s characteristic patterns of thinking, feeling and acting across a wide range of situations, the consistent features of the way they behave. It affects how we make decisions, solve problems, handle and deal with politics as well as cope with stress. Personality theory helps us to understand how others are different from us, despite similar experiences and situations. It also looks at how knowing and understanding your personality type can help you become a better individual. &lt;br&gt;
+We will look at how personality varies among individuals as well as how people are similar. We will also assess, diagnose, and treat personality disorders. We also will find what exactly is personality? How can you gain insight into your emotional well-being?&lt;/p&gt;
+&lt;h2&gt;What is personality?&lt;/h2&gt;
+&lt;p&gt;Personality means all of the thoughts, behavior patterns and social attitudes that impact how anyone views him/her self and what he/she believes about others and all around the worlds. &lt;br&gt;
+Knowing of personality allows psychologists to predict how people will treat to certain events and the sorts of things they favor and value. To gain a sense of how researchers study personality psychology, it will find helpful to understand more about some of the most prominent personality theories. &lt;br&gt;
+A lot of things would assert that what makes you unique is the characteristic levels of thoughts, feelings, thinking and behaviors that build up your personality. As there’s no one agreed-upon definition of personality, it is typically thought of as one thing that arises from at intervals individual and remains fairly consistent throughout life.&lt;/p&gt;
+&lt;h2&gt;Structuring Personalities&lt;/h2&gt;
+&lt;h3&gt;ID, EGO, and SUPEREGO&lt;/h3&gt;
+&lt;h2&gt;ID&lt;/h2&gt;
+&lt;p&gt;Sigmund Freud explicitly explained the theory of personality, according to him the id is the personality element built up of unconscious psychic power that acts to satisfy basic urges, desires, needs, and wishes. The ID demands immediate gratification of needs which based on the pleasure principle.&lt;/p&gt;
+&lt;h2&gt;EGO&lt;/h2&gt;
+&lt;p&gt;According to Sigmund Freud, the ego is the largely unconscious part of the personality that mediates the demands of the id, the superego, and reality. In further the ego stops us from doing on our basic urges which is created by the id however it also works to obtain a balance with our moral and impractical standards which is derived by the superego.&lt;/p&gt;
+&lt;h2&gt;SUPEREGO&lt;/h2&gt;
+&lt;p&gt;As we know according to Sigmund Freud’s theory of personality, the superego is the part of personality made of our internalized ideals that we have achieved from our parents, environment and from society and more tries to suppress the urges of the ID and tries to build the ego behave ethically, instead of absolutely.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Psychology" src="images/Psy-1.1.JPG" title="Psychology-1"&gt;&lt;/p&gt;</content><category term="Health"></category><category term="Psychology"></category></entry><entry><title>A program to display the digits in decimal from 0-7 in to 7-</title><link href="https://farooqalwi.github.io/pelican-web/a-program-to-display-the-digits-in-decimal-from-0-7-in-to-7-.html" rel="alternate"></link><published>2020-04-23T15:07:00+05:00</published><updated>2020-04-23T15:07:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2020-04-23:/pelican-web/a-program-to-display-the-digits-in-decimal-from-0-7-in-to-7-.html</id><summary type="html">&lt;h2&gt;Objective: Write a program to display the digits in decimal from 0-7 in to 7-&lt;/h2&gt;
+&lt;h2&gt;ource Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mov  al,80h          =&amp;gt;make  all  port
+out  1f,al           =&amp;gt;out  80h  to  port
+mov  al,00h          =&amp;gt;mov  0
+out  19h,al          =&amp;gt;mov  0  to  port int  3
+mov  al,f9h          =&amp;gt;mov  1
+out …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Objective: Write a program to display the digits in decimal from 0-7 in to 7-&lt;/h2&gt;
+&lt;h2&gt;ource Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mov  al,80h          =&amp;gt;make  all  port
+out  1f,al           =&amp;gt;out  80h  to  port
+mov  al,00h          =&amp;gt;mov  0
+out  19h,al          =&amp;gt;mov  0  to  port int  3
+mov  al,f9h          =&amp;gt;mov  1
+out  19h,al          =&amp;gt;mov  1  to  port int  3
+mov  al,a4h          =&amp;gt;mov  2
+out  19h,al          =&amp;gt;mov  2  to  port int  3
+mov  al,b0h          =&amp;gt;mov  3
+out  19h,al          =&amp;gt;mov  3  to  port int  3
+............(so  on  to  9)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Output:&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Assembly Language 3" src="images/AL-3.1.JPG" title="AL-3 output"&gt;&lt;/p&gt;</content><category term="Programming Exercise"></category><category term="Assembly Language"></category></entry><entry><title>A program to check remainder is even or odd to suggest addition/subtraction.</title><link href="https://farooqalwi.github.io/pelican-web/a-program-to-check-remainder-is-even-or-odd-to-suggest-additionsubtraction.html" rel="alternate"></link><published>2020-04-22T15:46:00+05:00</published><updated>2020-04-22T15:46:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2020-04-22:/pelican-web/a-program-to-check-remainder-is-even-or-odd-to-suggest-additionsubtraction.html</id><summary type="html">&lt;h2&gt;Lab Task: Objective&lt;/h2&gt;
+&lt;h3&gt;write a code snippet in python that have number integer &lt;code&gt;12345&lt;/code&gt; and it checks if the remainder with 2 of this number is even or odd.&lt;/h3&gt;
+&lt;h3&gt;If the remainder is even then the the digits will be added i.e &lt;code&gt;1+2+3+4+5&lt;/code&gt;&lt;/h3&gt;
+&lt;h3&gt;If the …&lt;/h3&gt;</summary><content type="html">&lt;h2&gt;Lab Task: Objective&lt;/h2&gt;
+&lt;h3&gt;write a code snippet in python that have number integer &lt;code&gt;12345&lt;/code&gt; and it checks if the remainder with 2 of this number is even or odd.&lt;/h3&gt;
+&lt;h3&gt;If the remainder is even then the the digits will be added i.e &lt;code&gt;1+2+3+4+5&lt;/code&gt;&lt;/h3&gt;
+&lt;h3&gt;If the remainder is odd then the digits will be subtracted i.e &lt;code&gt;-1-2-3-4-5&lt;/code&gt;&lt;/h3&gt;
+&lt;h2&gt;Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;12345&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="nb"&gt;sum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="n"&gt;digits&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;digit&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;digits&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="nb"&gt;sum&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;digit&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Sum of numbers is: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;sub&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="n"&gt;digits&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;digit&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;digits&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;sub&lt;/span&gt; &lt;span class="o"&gt;-=&lt;/span&gt; &lt;span class="n"&gt;digit&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Sub of numbers is: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Output:&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Python" src="images/PY-1.1.JPG" title="PY-1 output"&gt;&lt;/p&gt;</content><category term="Programming Exercise"></category><category term="Python"></category></entry><entry><title>A list of the most popular programming languages.</title><link href="https://farooqalwi.github.io/pelican-web/a-list-of-the-most-popular-programming-languages.html" rel="alternate"></link><published>2019-04-23T15:32:00+05:00</published><updated>2019-04-23T15:32:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2019-04-23:/pelican-web/a-list-of-the-most-popular-programming-languages.html</id><summary type="html">&lt;h2&gt;Objective 1: Make a list of the most popular programming languages. How are they different from C#?&lt;/h2&gt;
+&lt;h1&gt;LIST OF POPULAR PROGRAMMING LANGUAGE:&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;java&lt;/li&gt;
+&lt;li&gt;C/CPP&lt;/li&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;li&gt;PHP&lt;/li&gt;
+&lt;li&gt;Swift&lt;/li&gt;
+&lt;li&gt;R programming language&lt;/li&gt;
+&lt;li&gt;Ruby&lt;/li&gt;
+&lt;li&gt;Objective – C&lt;/li&gt;
+&lt;li&gt;Kotlin&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Difference b/w C# and above popular programming languages:&lt;/h1&gt;
+&lt;h2&gt;Python vs C#:&lt;/h2&gt;
+&lt;p&gt;C# is …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Objective 1: Make a list of the most popular programming languages. How are they different from C#?&lt;/h2&gt;
+&lt;h1&gt;LIST OF POPULAR PROGRAMMING LANGUAGE:&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;java&lt;/li&gt;
+&lt;li&gt;C/CPP&lt;/li&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;li&gt;PHP&lt;/li&gt;
+&lt;li&gt;Swift&lt;/li&gt;
+&lt;li&gt;R programming language&lt;/li&gt;
+&lt;li&gt;Ruby&lt;/li&gt;
+&lt;li&gt;Objective – C&lt;/li&gt;
+&lt;li&gt;Kotlin&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Difference b/w C# and above popular programming languages:&lt;/h1&gt;
+&lt;h2&gt;Python vs C#:&lt;/h2&gt;
+&lt;p&gt;C# is an object-oriented programming language, is pronounced as C-Sharp. This language was developed to compete with Java, by Microsoft under the leadership of Anders Heijlberg and his team. Like python it does not free of cost, it comes with the license. It is a compiled language rather than an interpreted language. There are 86 total keywords used in the C# language. In c#, pointers are used only in unsafe mode.
+Python is a multi-paradigm programming language such as object-oriented programming and structured programming and many others. It was developed by Guido van Rossum in the late 1980s. There are 33 total keywords used in the python 3.7. It doesn’t support pointers. It is dynamic-type language whereas C# is static-type language. It is easier than C# in order to learn.&lt;/p&gt;
+&lt;h2&gt;Java vs C#:&lt;/h2&gt;
+&lt;p&gt;C# is a general-purpose, modern and object-oriented programming language pronounced as “C sharp”. It was developed by Microsoft led by Anders Hejlsberg and his team.
+Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented etc. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture.&lt;/p&gt;
+&lt;h2&gt;C/CPP vs C#:&lt;/h2&gt;
+&lt;h3&gt;C++:&lt;/h3&gt;
+&lt;p&gt;C# is a general-purpose, modern and object-oriented programming language pronounced as “C sharp”. It was developed by Microsoft led by Anders Hejlsberg and his team.
+C++ is a statically typed, multiparadigm, and object-oriented programming language. In beginning, C++ was termed as C with classes. It was developed by Bjarne Stroustrup at AT &amp;amp; T Bell Laboratories. Some basic difference between C# and C++ are following:&lt;/p&gt;
+&lt;h3&gt;C:&lt;/h3&gt;
+&lt;p&gt;C language is a middle programming language that was developed at Bell research lab in 1972 by Dennis Ritchie. C language combines the properties of low level and high-level language. therefore, its thought-about a middle programming Language. C may be a high-level classical kind programming language that permits you to develop computer code and moveable applications. There are 32 total keywords used in the C language. It’s a perfect language for developing computer code systems.
+C# is an object-oriented programming language, is pronounced as C-Sharp. This language was developed to compete with Java, by Microsoft under the leadership of Anders Heijlberg and his team. There are 86 total keywords used in the C# language. In c#, pointers are used only in unsafe mode.&lt;/p&gt;
+&lt;h2&gt;JavaScript vs C#:&lt;/h2&gt;
+&lt;p&gt;C# runs inside the .NET framework, so it’s good for building desktop applications, but can also be used to build web applications and servers. JavaScript runs in a browser. It can still be used to make games and stuff, but they have to run inside Firefox, Chrome, IE etc.
+C# is strongly typed, meaning you have to explicitly define the types of all variables and function return types. JavaScript is weakly typed, so any variable can hold any type of value and any function can return anything. Functions can actually return other functions and variables can contain functions.
+C# is object oriented, so we have classes and inheritance and the like. It’s possible to hack objects into JavaScript, but based on my experience what you’re actually doing is just manipulating a dictionary to contain attributes and functions.
+C# is a compiled programming language. JavaScript (as the name implies) is a scripting language. So, JavaScript can fail due to syntactic errors at run time.&lt;/p&gt;
+&lt;h2&gt;PHP vs C#:&lt;/h2&gt;
+&lt;p&gt;PHP is Programming language used in the development of a website, recursive acronym for “PHP: Hypertext Pre-processor. C# is object-oriented, modern, general-purpose, programming language developed by Microsoft. It can be used in a web application as well desktop application development.&lt;/p&gt;
+&lt;h2&gt;Swift vs C#:&lt;/h2&gt;
+&lt;p&gt;Swift is better about functional programming. C# supports functional (pattern matching is available only with version 8) but is mainly OOP (mandatory). Swift is based on LLVM while C# has an implementation based on it (Mono). C# has a better concurrency support.&lt;/p&gt;
+&lt;h2&gt;R programming language vs C#:&lt;/h2&gt;
+&lt;p&gt;The R language is used by data scientists and programmers for statistical computing. In part because of the increasing amounts of data collected by software systems, and the need to analyze that data, R is one of the fastest-growing technologies among my colleagues who use C#. A familiarity with R can be a valuable addition to your technical skill set.
+The R language is a GNU project and is free software. R was derived from a language called S (for “statistics”), which was created at Bell Laboratories in the 1970s. There are many excellent online tutorials for R, but most of those tutorials assume you’re a university student studying statistics. This article is aimed at helping C# programmers get up to speed with R as quickly as possible.&lt;/p&gt;
+&lt;h2&gt;Ruby vs C#:&lt;/h2&gt;
+&lt;p&gt;C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers; Ruby: A dynamic, interpreted, open source programming language with a focus on simplicity and productivity. Ruby is a language of careful balance.&lt;/p&gt;
+&lt;h2&gt;Objective-C vs C#:&lt;/h2&gt;
+&lt;p&gt;The key differences between C# and Objective-C are that C# is used to develop software for Windows (web, desktop, mobile) while Objective-C is used to develop software for Mac OS X and iOS. While both are Object-oriented, Objective-C allows you to do C-style programming without objects.&lt;/p&gt;
+&lt;h2&gt;Kotlin vs C#:&lt;/h2&gt;
+&lt;p&gt;C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language.
+Kotlin is a statically typed programming language for the JVM, Android and the browser, 100% interoperable with Java. C# and Kotlin belong to "Languages" category of the tech stack.&lt;/p&gt;</content><category term="Programming Exercise"></category><category term="Programming Languages"></category></entry><entry><title>A program to print a string.</title><link href="https://farooqalwi.github.io/pelican-web/a-program-to-print-a-string.html" rel="alternate"></link><published>2019-04-23T15:02:00+05:00</published><updated>2019-04-23T15:02:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2019-04-23:/pelican-web/a-program-to-print-a-string.html</id><summary type="html">&lt;h2&gt;Objective: Write a program to print a string. (i.e. ALWI)&lt;/h2&gt;
+&lt;h2&gt;ource Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.model&lt;/span&gt;          &lt;span class="c1"&gt;// It is an assembler directive that specifies the size of the program&lt;/span&gt;
+&lt;span class="na"&gt;.stack&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// It declares size of stack&lt;/span&gt;
+&lt;span class="na"&gt;.data&lt;/span&gt;           &lt;span class="c1"&gt;// In this segment variables are declared&lt;/span&gt;
+&lt;span class="na"&gt;.code&lt;/span&gt;           &lt;span class="c1"&gt;// It is code segment directive&lt;/span&gt;
+
+&lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="no"&gt;proc&lt;/span&gt;       &lt;span class="c1"&gt;// main …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Objective: Write a program to print a string. (i.e. ALWI)&lt;/h2&gt;
+&lt;h2&gt;ource Code:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.model&lt;/span&gt;          &lt;span class="c1"&gt;// It is an assembler directive that specifies the size of the program&lt;/span&gt;
+&lt;span class="na"&gt;.stack&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// It declares size of stack&lt;/span&gt;
+&lt;span class="na"&gt;.data&lt;/span&gt;           &lt;span class="c1"&gt;// In this segment variables are declared&lt;/span&gt;
+&lt;span class="na"&gt;.code&lt;/span&gt;           &lt;span class="c1"&gt;// It is code segment directive&lt;/span&gt;
+
+&lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="no"&gt;proc&lt;/span&gt;       &lt;span class="c1"&gt;// main procedures start from here&lt;/span&gt;
+
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;DL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="no"&gt;A&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;     &lt;span class="c1"&gt;// &amp;#39;A&amp;#39; is moving to Data Register&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;ah&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;02&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// Service Routine is being defined here to print the character to AH&lt;/span&gt;
+&lt;span class="nf"&gt;int&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;         &lt;span class="c1"&gt;// Programs are returned to windows from DOS&lt;/span&gt;
+
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;DL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="no"&gt;L&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;     &lt;span class="c1"&gt;// &amp;#39;L&amp;#39; is moving to Data Register&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;ah&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;02&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// Service Routine is being defined here to print the character to AH&lt;/span&gt;
+&lt;span class="nf"&gt;int&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;         &lt;span class="c1"&gt;// Programs are returned to windows from DOS&lt;/span&gt;
+
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;DL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="no"&gt;W&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;     &lt;span class="c1"&gt;// &amp;#39;W&amp;#39; is moving to Data Register&amp;gt;&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;ah&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;02&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// Service Routine is being defined here to print the character to AH&lt;/span&gt;
+&lt;span class="nf"&gt;int&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;         &lt;span class="c1"&gt;// Programs are returned to windows from DOS&lt;/span&gt;
+
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;DL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="no"&gt;I&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;     &lt;span class="c1"&gt;// &amp;#39;I&amp;#39; is moving to Data Register&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;ah&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;02&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// Service Routine is being defined here to print the character to AH&lt;/span&gt;
+&lt;span class="nf"&gt;int&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;     &lt;span class="c1"&gt;// Programs are returned to windows from DOS&lt;/span&gt;
+
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="no"&gt;ah&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="no"&gt;ch&lt;/span&gt;     &lt;span class="c1"&gt;// Using 4ch service routine number to display&lt;/span&gt;
+&lt;span class="nf"&gt;int&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="no"&gt;h&lt;/span&gt;         &lt;span class="c1"&gt;// Programs are returned to windows from DOS&lt;/span&gt;
+
+&lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="no"&gt;endp&lt;/span&gt;       &lt;span class="c1"&gt;// Main procedures end here&lt;/span&gt;
+&lt;span class="nf"&gt;end&lt;/span&gt; &lt;span class="no"&gt;main&lt;/span&gt;        &lt;span class="c1"&gt;// whole programs end here&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Output:&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Assembly Language 2" src="images/AL-2.1.JPG" title="AL-2 output"&gt;
+&lt;img alt="Assembly Language 2" src="images/AL-2.2.JPG" title="AL-2 output"&gt;
+&lt;img alt="Assembly Language 2" src="images/AL-2.3.JPG" title="AL-2 output"&gt;&lt;/p&gt;</content><category term="Programming Exercise"></category><category term="Assembly Language"></category></entry><entry><title>PAKISTAN RAILWAY, TECHNOLOGICAL BOOST UP</title><link href="https://farooqalwi.github.io/pelican-web/pakistan-railway-technological-boost-up.html" rel="alternate"></link><published>2019-04-22T15:46:00+05:00</published><updated>2019-04-22T15:46:00+05:00</updated><author><name>Alwi</name></author><id>tag:farooqalwi.github.io,2019-04-22:/pelican-web/pakistan-railway-technological-boost-up.html</id><summary type="html">&lt;h1&gt;PAKISTAN RAILWAY, TECHNOLOGICAL BOOST UP&lt;/h1&gt;
+&lt;h2&gt;Overview:&lt;/h2&gt;
+&lt;p&gt;Pakistan Railway is the national railway company of Pakistan which is state-owned established 15th August 1947, this headquarter is in Lahore. It owns 7791 km of tracks throughout the country from Torkham to Karachi. It tries to facilitate the people in a comfort mode …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;PAKISTAN RAILWAY, TECHNOLOGICAL BOOST UP&lt;/h1&gt;
+&lt;h2&gt;Overview:&lt;/h2&gt;
+&lt;p&gt;Pakistan Railway is the national railway company of Pakistan which is state-owned established 15th August 1947, this headquarter is in Lahore. It owns 7791 km of tracks throughout the country from Torkham to Karachi. It tries to facilitate the people in a comfort mode.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pakistan Railway" src="images/CS-1.1.JPG" title="Pakistan Railway"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;Challenges:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Train arrival/departure schedule&lt;/li&gt;
+&lt;li&gt;Ticket distribution&lt;/li&gt;
+&lt;li&gt;Train categories&lt;/li&gt;
+&lt;li&gt;Weary Railway infrastructure&lt;/li&gt;
+&lt;li&gt;Outdated Railway system&lt;/li&gt;
+&lt;li&gt;Passengers data analysis&lt;/li&gt;
+&lt;li&gt;Security system&lt;/li&gt;
+&lt;li&gt;Railway route reconstruction&lt;/li&gt;
+&lt;li&gt;Future advancement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;Enhancement in Pakistan Railway:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;For proper time schedule Pakistan Railway can use real time cloud-based database to manage time table all around the country. They also give passengers view permission to facilitate them. By this type of solution there should not be o crowed at railway stations as people already will know their timing scheme.&lt;/li&gt;
+&lt;li&gt;Pakistan Railway should use a simple way to distribute tickets for this they are already using some online services but they have to provide such service which is easy to use for every person.&lt;/li&gt;
+&lt;li&gt;They have to build more routes to provide facilitation categories like sometimes some people have to go anywhere urgently then they can easily reach their destination, this service also exists but due to less routes they are unable to facilitate people properly, so they should build more routes.&lt;/li&gt;
+&lt;li&gt;Pakistan Railway infrastructure needs to be renovated as there are a lot of defects in it.&lt;/li&gt;
+&lt;li&gt;They also change their out-dated system and should move to modern digital infrastructure. They can use microservices to manage their customers data for future advancement.&lt;/li&gt;
+&lt;li&gt;They can build mini restaurants inside the trains to facilitate the people.&lt;/li&gt;
+&lt;li&gt;By using passengers’ data Pakistan Railway can provide the simple way in allocating the seats like whenever a passenger who travelled once can reserve the seat as he will find a filtered data.&lt;/li&gt;
+&lt;li&gt;In current infrastructure passengers’ security is in a high risk, there is a big security issue. Pakistan Railway should use 360 high-definition cameras to monitor the people.&lt;/li&gt;
+&lt;li&gt;Railway routes should be repaired as they are designed in old fashioned way, they should transform towards modern digital infrastructure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pakistan Railway" src="images/CS-1.2.JPG" title="Conceptual Diagram"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pakistan Railway" src="images/CS-1.3.JPG" title="IPO Diagram"&gt;&lt;/p&gt;</content><category term="Case Study"></category><category term="PAKISTAN RAILWAY"></category></entry></feed>

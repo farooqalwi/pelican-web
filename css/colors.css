@@ -1,0 +1,56 @@
+:root {
+  --mutedTextColor: #696969;
+}
+
+body {
+  background-color: #fffcf8;
+}
+
+body > header {
+  background-color: #efe3d0;
+}
+
+body header h1 a {
+  color: black;
+}
+
+header ul li {
+  line-height: 44px;
+}
+
+header ul li.active {
+  background-color: rgb(180, 180, 180);
+}
+
+body header ul li a {
+  color: var(--mutedTextColor);
+  display: block;
+}
+
+ul li a:hover,
+ul li a:focus {
+  color: #555;
+}
+
+body > footer {
+  background-color: #efe3d0;
+}
+
+.archs-post .arch-link a,
+.content div ul li a {
+  color: #3875d7;
+}
+
+.archs-content h2 a {
+  color: inherit;
+}
+
+.content div h1 {
+  color: inherit;
+}
+
+.content .tags-heading,
+.content .cats-heading,
+.content .archs-heading {
+  color: maroon;
+}
